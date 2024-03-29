@@ -1,0 +1,19 @@
+body{
+  background-color: #efefef;
+  font-family: 'Rethink Sans' !important;
+}
+
+#root{
+  --steel-pink-color: #B81EBE;
+  --grape-color: #6929C4;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+.grape-text{
+  color: var(--grape-color) !important;
+}
+.steel-pink-text{
+  color: var(--steel-pink-color) !important;
+}
