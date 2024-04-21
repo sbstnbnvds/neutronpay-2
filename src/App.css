@@ -6,14 +6,30 @@ body{
 #root{
   --steel-pink-color: #B81EBE;
   --grape-color: #6929C4;
+  --eerie-black-color: #161825;
 }
 
+/* Fonts */
 .fw-800 {
   font-weight: 800 !important;
 }
+/* Font Color */
 .grape-text{
   color: var(--grape-color) !important;
 }
 .steel-pink-text{
   color: var(--steel-pink-color) !important;
+}
+.eerie-black-text{
+  color: var(--eerie-black-color) !important;
+}
+
+/* Background Color */
+.eerie-black-background {
+  background-color: var(--eerie-black-color) !important;
+}
+@supports (-webkit-appearance: none) {
+  .steel-pink-to-grape-background{
+    background: -webkit-linear-gradient(200deg, var(--steel-pink-color) 25%, var(--grape-color) 125%) !important;
+  }
 }

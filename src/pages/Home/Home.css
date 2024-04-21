@@ -1,3 +1,117 @@
 span.line {
   display: inline-block;
 }
+
+/* Banner */
+
+@media (min-width: 1920px) {
+  
+}
+
+#home-banner-image {
+  right:-25% !important;
+  width: 187.5%;
+  max-height: 620px !important;
+}
+@media (min-width: 1400px) {
+
+  #home-banner-image {
+    width: 150%;
+    right: -5.5% !important;
+    top: -25%;
+  }
+}
+@media (min-width: 1620px) {
+
+  #home-banner-image {
+    width: auto !important;
+    right: -5.5% !important;
+    top: -25%;
+  }
+}
+@media (min-width: 1768px) {
+
+  #home-banner-image {
+  }
+  
+  .banner-main-row {
+    justify-content: space-evenly !important;
+  }
+  .home-banner-text{
+    width: 50em !important;
+  }
+}
+/* Benefits */
+
+
+.learn-more-link {
+  cursor: pointer;
+}
+
+.benefits-right-arrow {
+  transform: translate(-500%,-12.5%);
+  transition: transform 770ms;
+}
+
+.learn-more-link:hover .benefits-right-arrow {
+  transform: translate(0, -12.5%);
+}
+
+/* .benefits-main-row {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
+} */
+
+/* Lightning Network Advantage  */
+
+.lightning-network-advantage h2 {
+  width: 14em !important;
+}
+@supports (-webkit-appearance: none) {
+  .lightning-network-advantage h2 {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Trusted By Businesses */
+
+.dotted-background{
+  bottom: -50% !important;
+  transform: translate(0, 10%);
+}
+
+/* Worldwide Reach */
+
+.worldwide-reach-section img {
+  width: 80% !important;
+}
+
+.worldwide-reach-section .text-box-1 p {
+  font-size: 0.75em !important;
+}
+
+/* API for Businesses */
+.api-businesses-section .contact-us-button{
+  border: 0px;
+  background-color: var(--steel-pink-color);
+  font-size: 0.75em !important;
+  transition: all 0.15s ease-out;
+ }
+.api-businesses-section .contact-us-button:hover{
+  font-size: 0.8125em !important;
+}
+
+/* Payout Details */
+.payout-details-section .payout-details-wrapper{
+  padding: 3px !important;
+  width: 90% !important;
+}
+.payout-details-section .payout-details-col{
+  flex: 0 0 12.5%
+}
+
+/* World In Hands */
+.world-in-hands-section .world-hands-map{
+  bottom: 0;
+}
