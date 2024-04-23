@@ -1,3 +1,36 @@
 .navbar-nav .nav-link.active {
-  color: var(--steel-pink-color)
+  color: var(--steel-pink-color);
 }
+
+#navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar.hidden {
+  top: -74px;
+}
+
+@media (max-width: 765px) {
+
+  #navbar.hidden {
+    top: -274px;
+  }
+}
+
+#navbar.glassmorphism {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+}
+
+#navbar.glassmorphism.navbar-dark {
+  background: rgba(var(--eerie-black-rgb), 0.86)
+}
+
+
+/* background: rgba(255, 255, 255, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.4px);
+-webkit-backdrop-filter: blur(3.4px); */

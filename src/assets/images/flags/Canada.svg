@@ -1,0 +1,38 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_468_22952)">
+<mask id="mask0_468_22952" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-50" y="-42" width="599" height="577">
+<path d="M548.73 -42H-49.5684V535H548.73V-42Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_468_22952)">
+<path d="M91 -50H-50V535H91V-50Z" fill="#EA0020"/>
+</g>
+<mask id="mask1_468_22952" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-50" y="-50" width="599" height="585">
+<path d="M548.73 -50H-49.5684V535H548.73V-50Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_468_22952)">
+<path d="M549 -50H408V535H549V-50Z" fill="#EA0020"/>
+</g>
+<mask id="mask2_468_22952" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-50" y="-61" width="599" height="602">
+<path d="M548.73 -61H-49.5684V541H548.73V-61Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_468_22952)">
+<path d="M408 -51H91V532H408V-51Z" fill="white"/>
+</g>
+<mask id="mask3_468_22952" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-50" y="75" width="599" height="349">
+<path d="M548.73 75H-49.5684V424H548.73V75Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_468_22952)">
+<mask id="mask4_468_22952" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-50" y="-27" width="599" height="616">
+<path d="M549 -27H-50V589H549V-27Z" fill="white"/>
+</mask>
+<g mask="url(#mask4_468_22952)">
+<path d="M249.575 120.262L228.807 160.584C226.454 164.97 222.247 164.524 218.023 162.099L202.977 153.971L214.19 215.952C216.561 227.289 208.985 227.289 205.259 222.387L179.037 191.798L174.776 207.307C174.313 209.321 172.156 211.496 168.894 210.979L135.755 203.688L144.454 236.684C146.344 244.046 147.77 247.094 142.582 249.02L130.764 254.795L187.861 303.104C190.089 304.958 191.266 308.185 190.428 311.179L185.454 328.274C205.081 325.921 222.746 323.765 242.337 321.394C244.084 321.394 247.008 322.945 246.99 325.03L244.387 387.6H253.96L252.427 325.173C252.427 323.141 255.065 321.394 256.777 321.394C276.457 323.765 294.069 325.921 313.713 328.274L308.686 311.179C307.92 308.185 309.061 304.94 311.289 303.104L368.368 254.795L356.549 249.02C351.344 247.094 352.806 244.046 354.678 236.684L363.395 203.688L330.238 210.979C326.976 211.496 324.837 209.321 324.355 207.307L320.113 191.798L293.873 222.387C290.147 227.271 282.589 227.272 284.96 215.952L296.137 153.971L281.145 162.099C276.902 164.524 272.66 164.97 270.36 160.584L249.575 120.262Z" fill="#EA0020"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_468_22952">
+<rect width="500" height="500" fill="white"/>
+</clipPath>
+</defs>
+</svg>

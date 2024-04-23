@@ -20,7 +20,7 @@ const APIForEAndB = () => {
       </Row>
       <Row className='w-100 pt-1 justify-content-evenly z-3 position-relative'>
         <Col xs={9} className='text-white fs-4 text-center px-5 fs-4'>
-          <Button className='rounded-5 contact-us-button steel-pink-to-grape-background'>Contact our experts</Button>
+          <Button className='rounded-5 contact-us-button steel-pink-to-grape-background transition-1 border-0'>Contact our experts</Button>
         </Col>
       </Row>
 

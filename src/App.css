@@ -1,12 +1,17 @@
 body{
   background-color: #efefef;
-  font-family: 'Rethink Sans' !important;
+  font-family: 'Clash Grotesk' !important;
 }
+/* * {
+  letter-spacing: -0.025em;
+} */
 
 #root{
   --steel-pink-color: #B81EBE;
   --grape-color: #6929C4;
-  --eerie-black-color: #161825;
+  
+  --eerie-black-rgb: 22, 24, 37;
+  --eerie-black-color: rgb(var(--eerie-black-rgb))
 }
 
 /* Fonts */
@@ -28,8 +33,25 @@ body{
 .eerie-black-background {
   background-color: var(--eerie-black-color) !important;
 }
+.grape-background {
+  background-color: var(--grape-color) !important;
+}
+.steel-pink-background {
+  background-color: var(--steel-pink-color) !important;
+}
+
 @supports (-webkit-appearance: none) {
   .steel-pink-to-grape-background{
     background: -webkit-linear-gradient(200deg, var(--steel-pink-color) 25%, var(--grape-color) 125%) !important;
   }
+}
+
+/* Button */
+
+button.transition-1 {
+  transition: all 0.15s ease-out;
+}
+
+button.transition-1:hover {
+  font-size: 0.8125em !important;
 }

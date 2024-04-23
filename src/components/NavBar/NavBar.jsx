@@ -11,7 +11,9 @@ import Logo from './Logo'
 
 const NavBar = () => {
 
-  
+  const [background, setBackground] = useState('')
+  const [hidden, setHidden] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
   const tabsList = ["home", "business", "app", "blog", "company"]
 
@@ -19,27 +21,63 @@ const NavBar = () => {
 
   useEffect(() => {
     if (location.pathname == '/company') {
-      console.log('company')
-     } else {
-      console.log('not company')
-     }
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
   }, [location]);
 
+  useEffect(() => {
+
+    let prevScrollPos = window.scrollY;
+
+    const handleScroll = () => {
+
+      
+      const currentScrollPos = window.scrollY;
+      
+      if (window.scrollY > 74) {
+        setHidden(true)
+      } else {
+        setHidden(false)
+      }
+      if (prevScrollPos > currentScrollPos) {
+        setHidden(false);
+      }
+      
+      prevScrollPos = currentScrollPos;
+      if (window.scrollY > 90) {
+        setBackground("glassmorphism");
+      } else {
+        setBackground("")
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar expand='md'>
+    <Navbar
+      expand='md'
+      id='navbar'
+      className={(hidden ? 'fixed-top hidden' : 'fixed-top') + ' ' + background + ' ' +( darkMode ? 'navbar-dark dark-mode-nav' : '')}
+    >
       <Container>
         <Navbar.Brand href="#">
-          <Logo fill="black"/>
+          <Logo fill={ darkMode ? "white" : "black"} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse className='align-items-stretch flex-column'>
           <Nav className='justify-content-around' id='basic-navbar-nav'>
-            {tabsList.map((tab, index) => <NavLink 
-            key={index} 
-            role="button" 
-            data-rr-ui-event-key="#" 
-            tabIndex="0" 
-            className='fw-800 nav-link text-capitalize' to={index === 0 ? '/' : `/${tab}`}>{tab}</NavLink>)}
+            {tabsList.map((tab, index) => <NavLink
+              key={index}
+              role="button"
+              data-rr-ui-event-key="#"
+              tabIndex="0"
+              className='fw-800 nav-link text-capitalize' to={index === 0 ? '/' : `/${tab}`}
+              >{tab}</NavLink>)}
           </Nav>
 
         </Navbar.Collapse>

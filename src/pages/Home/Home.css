@@ -93,14 +93,9 @@ span.line {
 
 /* API for Businesses */
 .api-businesses-section .contact-us-button{
-  border: 0px;
   background-color: var(--steel-pink-color);
   font-size: 0.75em !important;
-  transition: all 0.15s ease-out;
  }
-.api-businesses-section .contact-us-button:hover{
-  font-size: 0.8125em !important;
-}
 
 /* Payout Details */
 .payout-details-section .payout-details-wrapper{
