@@ -14,12 +14,12 @@ const Business = () => {
   return (
     <>
       <Banner />
-      <PayInsPayOuts />
+      {/* <PayInsPayOuts /> */}
       <APIFeatures />
       <EngineeredForDevelopers />
       <PayPortal />
       <EnabledCountries />
-      <PayoutDetails />
+      {/* <PayoutDetails /> */}
     </>
   )
 }

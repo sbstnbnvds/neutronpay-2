@@ -45,18 +45,27 @@
   font-size: 1.75rem !important;
 }
 
-.enabled-countries-section .flag-wrapper {
-  transition: all 5.3s ease-in;
+.enabled-countries-section .flags-wrapper {
+  overflow-y: hidden;
 }
-.enabled-countries-section .enabled-row-wrapper:hover .flag-wrapper {
+
+.enabled-countries-section .slide-in-up {
+  animation: 0.35s ease-in-out 0s slide-in-up;
 }
-/* .enabled-countries-section .flags-wrapper {
-  display: none;
-} 
-.enabled-countries-section .enabled-row-wrapper:hover .flags-wrapper {
-  display: flex;
-}
-.enabled-countries-section .enabled-countries-continent,
-.enabled-countries-continent .flags-wrapper {
-  transition: all 0.3s ease-in-out;
+/* .enabled-countries-section .slide-out-down {
+  animation: 0.15s ease-in-out 0s slide-out-down;
 } */
+.enabled-countries-section .slide-out-down {
+  height: 0px !important;
+}
+
+@keyframes slide-in-up {
+  0%{max-height: 0px;}
+  100% {max-height: 180px;}
+  
+}
+
+@keyframes slide-out-down {
+  0%{max-height: 180px;}
+  100% {max-height: 0px;}
+}

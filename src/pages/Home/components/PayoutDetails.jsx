@@ -1,26 +1,147 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
+import { CanadaFlag, VietnamFlag, PhilippinesFlag, ThailandFlag, IndonesiaFlag } from '../../../components/Tools'
+
+import roundedTick from '../../../assets/images/tick-rounded.svg'
+import tick from '../../../assets/images/tick.svg'
+import cross from '../../../assets/images/cross.svg'
 
 const PayoutDetails = () => {
   return (
-    <section className='payout-details-section eerie-black-background justify-content-center d-flex py-5'>
-      <Row className='w-75 m-0 steel-pink-to-grape-background payout-details-wrapper rounded-2'>
-        <Row className='eerie-black-background w-100 m-0 rounded-2 py-4'>
-          <h2 className='text-white text-capitalize text-center fw-800 fs-1 pb-5'>payout details</h2>
-          
-          
-          <Row className='w-100 d-flex flex-row m-0 p-0'>
-            <div className='d-flex ms-auto justify-content-center align-items-center text-white text-center fs-6 payout-details-col'>Mass payouts in Bitcoin</div>
-            <div className='d-flex justify-content-center align-items-center text-white text-center fs-6 payout-details-col'>Pay-in</div>
-            <div className='d-flex justify-content-center align-items-center text-white text-center fs-6 payout-details-col'>Pay-out</div>
-            <div className='d-flex justify-content-center align-items-center text-white text-center fs-6 payout-details-col'>Bank withdraw</div>
-            <div className='d-flex justify-content-center align-items-center text-white text-center fs-6 payout-details-col'>Mobile money withdraw</div>
+    <section className='payout-details-section  justify-content-center d-flex py-5'>
+      <Row className='w-75 m-0 payout-details-wrapper rounded-2 shadow'>
+        <Row className='w-100 m-0 rounded-2 py-4 px-2'>
+          <h2 className='grape-text text-capitalize text-center fw-800 fs-1 pb-5'>payout details</h2>
+
+
+          <Row className='w-100 m-0 p-0'>
+            <div className='d-flex ms-auto justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Mass payouts in Bitcoin</div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Pay-in</div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Pay-out</div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Bank withdraw</div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Mobile money withdraw</div>
+          </Row>
+          <Row className='m-0 p-0 py-3'>
+            <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
+              <img src={CanadaFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
+              <p className='m-0 fs-4'>Canada</p>
+            </div>
+
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
+              <img src={roundedTick} alt="" className='h-100' />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+
           </Row>
 
-          <Row>
+          <Row className='m-0 p-0 py-3'>
+            <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
+              <img src={VietnamFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
+              <p className='m-0 fs-4'>Vietnam</p>
+            </div>
+
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
+              <img src={roundedTick} alt="" className='h-100' />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
 
           </Row>
+
+
+          <Row className='m-0 p-0 py-3'>
+            <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
+              <img src={PhilippinesFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
+              <p className='m-0 fs-4'>Philippines</p>
+            </div>
+
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
+              <img src={roundedTick} alt="" className='h-100' />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+
+          </Row>
+
+
+          <Row className='m-0 p-0 py-3'>
+            <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
+              <img src={ThailandFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
+              <p className='m-0 fs-4'>Thailand</p>
+            </div>
+
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
+              <img src={roundedTick} alt="" className='h-100' />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+          </Row>
+
+          <Row className='m-0 p-0 py-3'>
+            <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
+              <img src={IndonesiaFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
+              <p className='m-0 fs-4'>Indonesia</p>
+            </div>
+
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
+              <img src={roundedTick} alt="" className='h-100' />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={cross} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+            <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
+              <img src={tick} alt="" />
+            </div>
+          </Row>
+
         </Row>
 
       </Row>

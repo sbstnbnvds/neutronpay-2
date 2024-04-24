@@ -8,6 +8,7 @@ import Company from './pages/Company/Company';
 import Business from './pages/Business/Business';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import AppPage from './pages/App/AppPage';
 
 function App() {
 
@@ -18,9 +19,9 @@ function App() {
           <Route exact path='/' element={<Home/>}></Route>
           <Route path='/company' element={<Company/>} />
           <Route path='/business' element={<Business/>} />
-
+          <Route path='/app' element={<AppPage/>}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
   )
 }

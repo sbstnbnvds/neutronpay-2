@@ -25,14 +25,14 @@ const WorldwideReach = () => {
                   </Row>
                 </Col>
                 <Col className='d-flex align-items-center' xs={12}>
-                <Row className='bg-white w-100 shadow rounded-4 px-3 py-2'>
+                {/* <Row className='bg-white w-100 shadow rounded-4 px-3 py-2'>
                     sdfsd
                   </Row>
                 </Col>
                 <Col className='d-flex align-items-center' xs={12}>
                 <Row className='bg-white w-100 shadow rounded-4 px-3 py-2'>
                     sdfsd
-                  </Row>
+                  </Row> */}
                 </Col>
               </Row>
             

@@ -103,7 +103,16 @@ span.line {
   width: 90% !important;
 }
 .payout-details-section .payout-details-col{
-  flex: 0 0 12.5%
+  flex: 0 0 12.5%;
+}
+.payout-details-section .payout-details-col img{
+  max-height: 1.9rem;
+}
+.payout-details-section .payout-details-col.header-payout-details{
+  max-height: none;
+}
+.payout-details-section .payout-details-text-col{
+  flex: 0 0 37.5%;
 }
 
 /* World In Hands */

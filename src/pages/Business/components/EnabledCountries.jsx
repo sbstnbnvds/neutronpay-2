@@ -1,37 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-// Asia
-import CambodiaFlag from '../../../assets/images/flags/Cambodia.svg'
-import IndonesiaFlag from '../../../assets/images/flags/Indonesia.svg'
-import JapanFlag from '../../../assets/images/flags/Japan.svg'
-import MalaysiaFlag from '../../../assets/images/flags/Malaysia.svg'
-import PhilippinesFlag from '../../../assets/images/flags/Philippines.svg'
-import SouthKoreaFlag from '../../../assets/images/flags/South Korea.svg'
-import ThailandFlag from '../../../assets/images/flags/Thailand.svg'
-import VietnamFlag from '../../../assets/images/flags/Vietnam.svg'
+import { asianCountries, americanCountries, africanCountries } from '../../../components/Tools'
 
-// America
-import ArgentinaFlag from '../../../assets/images/flags/Argentina.svg'
 
-const asianCountries = [
-  ["Cambodia", CambodiaFlag],
-  ["Indonesia", IndonesiaFlag],
-  ["Japan", JapanFlag],
-  ["Malaysia", MalaysiaFlag],
-  ["Philippines", PhilippinesFlag],
-  ["South Korea", SouthKoreaFlag],
-  ["Thailand", ThailandFlag],
-  ["Vietnam", VietnamFlag],
+const tabList = [
+  ["Asia", asianCountries],
+  ["America", americanCountries],
+  ["Africa", africanCountries],
 ]
+// tabList.map((tab, index) => <Row className=''>
+//   {tab[0]}
+
+// </Row>)
+
+
+// < Row className = 'text-center justify-content-center enabled-row-wrapper' >
+//           <Row className='flags-wrapper text-center justify-content-center px-5'>
+//             {asianCountries.map((country, index) => <Row
+//               key={index}
+//               className='flag-wrapper px-1 mx-1'
+//             >
+//               <img
+//                 src={country[1]}
+//                 className='rounded-circle w-100 h-100 p-0 border border-3'
+//                 alt={country[0]}
+//               >
+//               </img>
+//             </Row>
+
+
+//             )}
+//           </Row>
+//           <Row className='text-center'>
+//             <p className='text-center fs-4 p-0 enabled-countries-continent'>
+//               Asia
+//             </p>
+//           </Row>
+// </Row >
 
 const EnabledCountries = () => {
+
+  const [hoveredTab, setHoveredTab] = useState("Africa")
+  const tabList = [
+    ["Asia", asianCountries],
+    ["America", americanCountries],
+    ["Africa", africanCountries],
+  ]
+
+
   return (
     <section className='enabled-countries-section eerie-black-background py-4'>
-      <Row className='w-100 justify-content-center text-white'>
+      <Row className='w-100 justify-content-center text-white align-items-center'>
         <Col xs={6} className='text-center px-5 d-flex flex-column align-items-center'>
           <h2 className='text-capitalize display-4 fw-semibold'>Enabled pay-out countries</h2>
           <p className='fs-5 fw-light'>With support for over 20+ different currencies, you'll be able to easily exchange, and transfer money instantly.</p>
@@ -44,28 +67,39 @@ const EnabledCountries = () => {
           <Row className='text-center'>
             <p className='mb-1 p-0 fs-3'>Mass payouts</p>
           </Row>
-          <Row className='text-center justify-content-center enabled-row-wrapper'>
-            <Row className='flags-wrapper text-center justify-content-center px-5'>
-              {asianCountries.map((country, index) => <Row
-                key={index}
+          
+          
+          {tabList.map((tab, index) => <Row 
+          className='text-center justify-content-center enabled-row-wrapper'
+          key={tab}
+          onMouseOver={(e) => {
+            console.log(tab[0] + " onMouseOver")
+            setHoveredTab(tab[0]);
+          }}>
+            <Row className={'flags-wrapper text-center justify-content-center px-5 ' + (tab[0] == hoveredTab ? 'slide-in-up' : 'slide-out-down')}>
+              {tab[1].map((country, index) => <Row
+                key={country}
                 className='flag-wrapper px-1 mx-1'>
-                  <img
-                    src={country[1]}
-                    className='rounded-circle w-100 h-100 p-0 border border-3'
-                    alt={country[0]}
-                  >
-                  </img>
-                </Row>
-              
+                <img
+                  src={country[1]}
+                  className='rounded-circle w-100 h-100 p-0 border border-3'
+                  alt={country[0]}
+                >
+                </img>
+              </Row>
+
 
               )}
             </Row>
             <Row className='text-center'>
               <p className='text-center fs-4 p-0 enabled-countries-continent'>
-                Asia
+                {tab[0]}
               </p>
             </Row>
           </Row>
+          )}
+
+
         </Col>
       </Row>
     </section>

@@ -2,7 +2,6 @@ import React from 'react'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 
 import backgroundImage from '../../../assets/images/business/engineered-for-developers.png'
 import listTick from '../../../assets/images/business/list-tick.svg'
