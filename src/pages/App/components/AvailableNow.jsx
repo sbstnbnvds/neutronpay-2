@@ -32,20 +32,20 @@ const AvailableNow = () => {
       <Container>
 
         <h2 className='text-center text-capitalize grape-text display-2 fw-semibold'>Available now!</h2>
-        <Row className='m-0 justify-content-center py-5 px-5'>
-          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={12} key={index}>
+        <Row className='m-0 justify-content-evenly py-5 px-5'>
+          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={9} key={index}>
             <img src={flag[1]} alt="" className='w-100 flag-app mb-3' />
             <p className='fs-4 text-center'>{flag[0]}</p>
           </Col>)}
         </Row>
 
         <Row className='m-0 justify-content-center'>
-          <Col xs={4}>
-            <Row className='w-100 align-items-center ps-2'>
-              <Col xs={5} onClick={() => console.log('click test')}>
-                <img className='w-100' src={Apple} alt="Download on the App Store" />
+          <Col lg={7} sm={10} xs={8}>
+            <Row className='w-100 align-items-center ps-sm-5 gy-4'>
+              <Col sm={5} onClick={() => console.log('click test')}>
+                <img className='w-100 px-3 px-sm-0' src={Apple} alt="Download on the App Store" />
               </Col>
-              <Col xs={6}>
+              <Col sm={6}>
                 <img className='w-100' src={Google} alt="Get it on Google Play" />
               </Col>
             </Row>

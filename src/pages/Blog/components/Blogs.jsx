@@ -57,7 +57,7 @@ const Blogs = () => {
         <small className='text-secondary fs-4 fw-medium'>Lorem ipsum</small>
 
 
-        <Row className='mx-0 my-4 gy-4'>
+        <Row className='mx-0 my-1 gy-5'>
           {blogsList.map((blog, index) => <Col
             key={index}
             lg={4}

@@ -1,3 +1,9 @@
+/* Pay-ins Pay-outs */
+
+.pay-ins-outs-section .card-bg-img {
+  transform: translateY(1rem);
+}
+
 /* API Features */
 
 .api-features-section .api-features-card {

@@ -15,10 +15,10 @@ const Benefits = () => {
     console.log('handleClick');
   };
   return (
-    <section className="benefits-section overflow-hidden pt-3 pb-5">
+    <section className="benefits-section pt-3 pb-5">
       <Container>
 
-        <Row className='mx-2 px-5 justify-content-between benefits-main-row gy-5'>
+        <Row className='mx-0 px-5 justify-content-center benefits-main-row gy-5'>
           <Col lg={4} md={12} xs={12} className='px-4'>
             <Row className='h-100'>
               <Col xs={12} className='rounded-4 shadow benefits-card pt-5 pb-4 px-4 h-100'>
@@ -50,9 +50,9 @@ const Benefits = () => {
                 </Row>
                 <Row onClick={handleClick} className='justify-content-between mt-5 learn-more-link'>
                   <Col xs={6}>
-                    <p className='align-'>Learn more...</p>
+                    <p className=''>Learn more...</p>
                   </Col>
-                  <Col xxl={2} lg={2} xs={2} className='px-3'>
+                  <Col xxl={2} xl={2} lg={3} md={1} sm={2} xs={2} className='px-3'>
                     <img src={rightArrow} alt="" className='w-100 benefits-right-arrow' />
                   </Col>
                 </Row>

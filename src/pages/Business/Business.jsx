@@ -14,7 +14,7 @@ const Business = () => {
   return (
     <>
       <Banner />
-      {/* <PayInsPayOuts /> */}
+      <PayInsPayOuts />
       <APIFeatures />
       <EngineeredForDevelopers />
       <PayPortal />
