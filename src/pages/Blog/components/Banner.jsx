@@ -11,6 +11,28 @@ import mainImage from '../../../assets/images/blog/main-blog.png'
 import placeholderImage from '../../../assets/images/blog/blog-placeholder.png'
 
 const Banner = () => {
+
+
+  const secondaryBlogs = [
+    {
+      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      cutline: "Lorem ipsum",
+      image: placeholderImage,
+    },
+    {
+      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      cutline: "Lorem ipsum",
+      image: placeholderImage,
+    },
+    {
+      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      cutline: "Lorem ipsum",
+      image: placeholderImage,
+    },
+  ]
+
+
+
   return (
     <section className='blog-banner eerie-black-background py-5 text-white position-relative'>
       <h1 className='display-1 fw-800 text-uppercase text-center pt-5 mt-5 position-relative z-3'>the blog</h1>
@@ -27,41 +49,19 @@ const Banner = () => {
 
           </Col>
           <Col lg={6} xs={12} className='px-5'>
-            <Row className='mx-0 align-items-center py-4 '>
-              <Col lg={5} xs={5}>
+            {secondaryBlogs.map((blog, index) => <Row 
+            key={index} 
+            className={'mx-0 align-items-center py-4 position-relative ' + (index == 1 ? 'middle-row' : '')}>
+              <Col sm={5} xs={12}>
                 <div className="secondary-blog-pic w-100">
-                  <img src={placeholderImage} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
+                  <img src={blog.image} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
                 </div>
               </Col>
-              <Col lg={7} xs={7}>
-                <small className='fs-6 text-white-50'>Lorem ipsum</small>
-                <h3 className='fs-4 fw-normal py-1 m-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+              <Col sm={7} xs={12} className='my-2'>
+                <small className='fs-6 text-white-50'>{blog.cutline}</small>
+                <h3 className='fs-4 fw-normal py-1 m-0'>{blog.header}</h3>
               </Col>
-            </Row>
-            <Row className='mx-0 align-items-center py-4 middle-row position-relative'>
-              <Col lg={5} xs={5}>
-                <div className="secondary-blog-pic w-100">
-                  <img src={placeholderImage} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
-                </div>
-              </Col>
-              <Col lg={7} xs={7}>
-                <small className='fs-6 text-white-50'>Lorem ipsum</small>
-                <h3 className='fs-4 fw-normal py-1 m-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-              </Col>
-            </Row>
-            <Row className='mx-0 align-items-center py-4 '>
-              <Col lg={5} xs={5}>
-                <div className="secondary-blog-pic w-100">
-                  <img src={placeholderImage} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
-                </div>
-              </Col>
-              <Col lg={7} xs={7}>
-                <small className='fs-6 text-white-50'>Lorem ipsum</small>
-                <h3 className='fs-4 fw-normal py-1 m-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-              </Col>
-            </Row>
-
-
+            </Row>)}
           </Col>
         </Row>
       </Container>

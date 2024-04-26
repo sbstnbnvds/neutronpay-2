@@ -2,6 +2,7 @@ import React from 'react'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 
 
 import CanadaFlag from '../../../assets/images/app/flags/Canada.svg'
@@ -26,29 +27,31 @@ const AvailableNow = () => {
   ]
 
 
-
   return (
     <section className='app-available-now py-5'>
-      <h2 className='text-center text-capitalize grape-text display-2 fw-semibold'>Available now!</h2>
-      <Row className='m-0 justify-content-center py-5'>
-        {flags.map((flag, index) => <Col xs={1} key={index}>
-          <img src={flag[1]} alt="" className='w-100 flag-app mb-3' />
-          <p className='fs-6 text-center'>{flag[0]}</p>
-        </Col>)}
-      </Row>
+      <Container>
 
-      <Row className='m-0 justify-content-center'>
-        <Col xs={4}>
-          <Row className='w-100 align-items-center ps-2'>
-            <Col xs={5} onClick={() => console.log('click test')}>
-              <img className='w-100' src={Apple} alt="Download on the App Store" />
-            </Col>
-            <Col xs={6}>
-              <img className='w-100' src={Google} alt="Get it on Google Play" />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <h2 className='text-center text-capitalize grape-text display-2 fw-semibold'>Available now!</h2>
+        <Row className='m-0 justify-content-center py-5 px-5'>
+          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={12} key={index}>
+            <img src={flag[1]} alt="" className='w-100 flag-app mb-3' />
+            <p className='fs-4 text-center'>{flag[0]}</p>
+          </Col>)}
+        </Row>
+
+        <Row className='m-0 justify-content-center'>
+          <Col xs={4}>
+            <Row className='w-100 align-items-center ps-2'>
+              <Col xs={5} onClick={() => console.log('click test')}>
+                <img className='w-100' src={Apple} alt="Download on the App Store" />
+              </Col>
+              <Col xs={6}>
+                <img className='w-100' src={Google} alt="Get it on Google Play" />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }

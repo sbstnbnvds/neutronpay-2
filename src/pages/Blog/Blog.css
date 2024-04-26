@@ -29,18 +29,38 @@ section.blogs-section .single-blog-pic {
   height: 12rem;
 }
 
+section.blogs-section .middle-column:before,
 section.blogs-section .middle-column:after,
-section.blogs-section .middle-column:before {
+section.blogs-section .odd-column:before {
   top: 0;
   content: '';
   height: 100%;
-  width: 0.125rem;
   position: absolute;
+  width: 0px;
   left: 0;
   background-color: var(--bs-gray-300);
 }
 
-section.blogs-section .middle-column:before {
+section.blogs-section .middle-column:after {
   left: auto;
   right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section.blogs-section .odd-column:before {
+    width: 0.125rem;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  section.blogs-section .odd-column:before {
+    width: 0px;
+  }
+
+  section.blogs-section .middle-column:before,
+  section.blogs-section .middle-column:after {
+    width: 0.125rem;
+  }
 }

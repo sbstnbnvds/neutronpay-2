@@ -2,21 +2,25 @@ import React from 'react'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 
 import backgroundImage from '../../../assets/images/company/section-2-company.png'
 
 const Section2 = () => {
   return (
-    <section className='company-section-1'>
-      <Row className='flex-row-reverse w-100 px-5 mx-0 py-5 justify-content-evenly align-items-center eerie-black-background'>
-        <Col xs={6}>
-          
-          <p className='fw-normal pe-5 fs-3 text-white'>Powered by the Bitcoin Lightning Network, we believe in leveraging the best of emerging technologies to make this vision a reality. That's why we are harnessing the potential of the Lightning Network. This innovation enables near-instantaneous transactions, setting the foundation for a financial ecosystem that can operate in real - time, anywhere.</p>
-        </Col>
-        <Col xs={6}>
-          <img src={backgroundImage} className='w-100 rounded-5' alt="" />
-        </Col>
-      </Row>
+    <section className='company-section-1 eerie-black-background'>
+      <Container>
+        <Row className='flex-row-reverse w-100 px-5 mx-0 py-5 justify-content-evenly align-items-center gy-4'>
+          <Col xl={6} lg={7}>
+
+            <p className='fw-normal pe-5 fs-3 text-white'>Powered by the Bitcoin Lightning Network, we believe in leveraging the best of emerging technologies to make this vision a reality. That's why we are harnessing the potential of the Lightning Network. This innovation enables near-instantaneous transactions, setting the foundation for a financial ecosystem that can operate in real - time, anywhere.</p>
+          </Col>
+          <Col xl={6} lg={5}>
+            <img src={backgroundImage} className='w-100 rounded-5' alt="" />
+          </Col>
+        </Row>
+
+      </Container>
     </section>
   )
 }
