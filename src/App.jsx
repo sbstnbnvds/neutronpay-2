@@ -4,11 +4,12 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home/Home';
-import Company from './pages/Company/Company';
 import Business from './pages/Business/Business';
+import AppPage from './pages/App/AppPage';
+import Blog from './pages/Blog/Blog';
+import Company from './pages/Company/Company';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import AppPage from './pages/App/AppPage';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/company' element={<Company/>} />
           <Route path='/business' element={<Business/>} />
           <Route path='/app' element={<AppPage/>}/>
+          <Route path='/blog' element={<Blog/>}/>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect,  useState } from 'react'
 import './NavBar.css'
 
 import { NavLink, useLocation } from 'react-router-dom'
@@ -20,11 +20,12 @@ const NavBar = () => {
   let location = useLocation();
 
   useEffect(() => {
-    if (location.pathname == '/company') {
+    if (location.pathname == '/company' || location.pathname == '/blog') {
       setDarkMode(true);
     } else {
       setDarkMode(false);
     }
+    window.scrollTo(0, 0);
   }, [location]);
 
   useEffect(() => {
@@ -33,9 +34,9 @@ const NavBar = () => {
 
     const handleScroll = () => {
 
-      
+
       const currentScrollPos = window.scrollY;
-      
+
       if (window.scrollY > 74) {
         setHidden(true)
       } else {
@@ -44,7 +45,7 @@ const NavBar = () => {
       if (prevScrollPos > currentScrollPos) {
         setHidden(false);
       }
-      
+
       prevScrollPos = currentScrollPos;
       if (window.scrollY > 90) {
         setBackground("glassmorphism");
@@ -58,15 +59,15 @@ const NavBar = () => {
     };
   }, []);
 
-  return (
+  return (<>
     <Navbar
       expand='md'
       id='navbar'
-      className={(hidden ? 'fixed-top hidden' : 'fixed-top') + ' ' + background + ' ' +( darkMode ? 'navbar-dark dark-mode-nav' : '')}
+      className={(hidden ? 'fixed-top hidden' : 'fixed-top') + ' ' + background + ' ' + (darkMode ? 'navbar-dark dark-mode-nav' : '')}
     >
       <Container>
         <Navbar.Brand href="#">
-          <Logo fill={ darkMode ? "white" : "black"} />
+          <Logo fill={darkMode ? "white" : "black"} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse className='align-items-stretch flex-column'>
@@ -77,13 +78,15 @@ const NavBar = () => {
               data-rr-ui-event-key="#"
               tabIndex="0"
               className='fw-800 nav-link text-capitalize' to={index === 0 ? '/' : `/${tab}`}
-              >{tab}</NavLink>)}
+            >{tab}</NavLink>)}
           </Nav>
 
         </Navbar.Collapse>
       </Container>
 
     </Navbar>
+
+  </>
   )
 }
 

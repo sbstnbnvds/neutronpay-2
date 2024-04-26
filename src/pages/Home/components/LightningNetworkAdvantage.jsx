@@ -2,6 +2,8 @@ import React from 'react'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+
 const LightningNetworkAdvantage = () => {
   return (
     <section className='lightning-network-advantage w-100 pt-3 pb-5 mb-3'>

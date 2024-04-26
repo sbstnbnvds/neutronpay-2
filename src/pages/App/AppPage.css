@@ -1,0 +1,5 @@
+/* Available Now */
+
+section.app-available-now .flag-app {
+  filter: drop-shadow(4px 4px 8px black);
+}
