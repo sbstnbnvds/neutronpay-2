@@ -11,7 +11,7 @@ import cross from '../../../assets/images/cross.svg'
 
 const PayoutDetails = () => {
   return (
-    <section className='payout-details-section  justify-content-center d-flex py-5'>
+    <section className='payout-details-section py-5'>
       <Container>
 
           <Row className='w-100 m-0 rounded-2 py-4 px-2 shadow shadow-lg'>

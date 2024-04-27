@@ -16,11 +16,12 @@ const YourWorldInYourHands = () => {
       <Container>
 
 
-        <h2 className='text-center fw-800 display-3 position-relative z-2 mb-5'>Your World in Your Hand</h2>
+        <h2 className='text-center fw-800 display-3 position-relative z-2 mb-1'>Your World in Your Hand</h2>
         {/* <p className='text-center fs-1 fw-800 grape-text position-relative z-2'>We're available in Canada, Vietnam and Thailand... for now!</p> */}
-        <Row className='w-100 m-0 justify-content-around align-items-center position-relative z-2'>
-          <Col xs={4}>
-            <Row className='w-100 align-items-center'>
+        <Row className='m-0 gy-4 justify-content-around align-items-center position-relative z-2 flow-row-reverse'>
+          
+          <Col md={6} xs={12}>
+            <Row className='mx-0 align-items-center justify-content-between'>
               <Col xs={5} onClick={() => console.log('click test')}>
                 <img className='w-100' src={Apple} alt="Download on the App Store" />
               </Col>
@@ -29,13 +30,12 @@ const YourWorldInYourHands = () => {
               </Col>
             </Row>
           </Col>
-          <Col xs={3} className=''>
+          <Col md={5} xs={8} className=''>
             <img className='w-100 px-1' src={Phone} alt="" />
           </Col>
-
         </Row>
         <Row className="w-100 justify-content-center">
-          <Col xs={7} className='position-relative justify-content-center d-flex'>
+          <Col xs={12} className='position-relative justify-content-start justify-content-md-center d-flex'>
             <img src={dottedBackground} className='w-50 position-absolute world-hands-map opacity-25' alt="" />
           </Col>
         </Row>

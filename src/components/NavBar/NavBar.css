@@ -3,25 +3,24 @@
 }
 
 #navbar {
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.75s ease-out;
 }
 
 #navbar.hidden {
-  top: -74px;
+  transform: translateY(-74px);
 }
 
-@media (max-width: 765px) {
-
-  #navbar.hidden {
-    top: -274px;
-  }
+#navbar.hidden:has(.collapse.show) {
+  transform: translateY(-274px);
 }
 
-#navbar.glassmorphism {
+#navbar.glassmorphism,
+#navbar:has(.collapse.show),
+#navbar:has(.collapsing) {
   background: rgba(255, 255, 255, 0.86);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.4px);
-  -webkit-backdrop-filter: blur(3.4px);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
 }
 
 #navbar.glassmorphism.navbar-dark {
@@ -32,5 +31,5 @@
 /* background: rgba(255, 255, 255, 0.26);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.4px);
--webkit-backdrop-filter: blur(3.4px); */
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px); */

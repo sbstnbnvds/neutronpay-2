@@ -14,8 +14,10 @@ const EconomicalFees = () => {
       <Container
       className='my-3'>
         <Row className='w-100 px-5 mx-0 py-5 justify-content-center align-items-center'>
-          <Col lg={6}>
-            <h2 className='grape-text text-capitalize fw-semibold display-5'>economical fees</h2>
+          <Col
+           lg={6}
+           className='d-flex flex-column align-items-center'>
+            <h2 className='grape-text text-capitalize fw-semibold display-5 align-self-start'>economical fees</h2>
             <p className='fw-normal text-light mb-5'>Why pay more when you can pay less? Lightning Network operates with minimal fees, making it the smart choice for both bustling businesses and daily personal expenses.</p>
 
             <img

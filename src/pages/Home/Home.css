@@ -4,13 +4,13 @@ span.line {
 
 /* Banner */
 
-@media (min-width: 1920px) {
-  
+#home-banner .home-banner-img-container {
+  /* height: 10rem; */
 }
 
 #home-banner-image {
-  right:-25% !important;
-  width: 187.5%;
+  right:-155% !important;
+  width: 127.5%;
   max-height: 620px !important;
 }
 @media (min-width: 1400px) {
@@ -21,40 +21,27 @@ span.line {
     top: -25%;
   }
 }
-@media (min-width: 1620px) {
 
-  #home-banner-image {
-    width: auto !important;
-    right: -5.5% !important;
-    top: -25%;
-  }
-}
-@media (min-width: 1768px) {
-
-  #home-banner-image {
-  }
-  
-  .banner-main-row {
-    justify-content: space-evenly !important;
-  }
-  .home-banner-text{
-    width: 50em !important;
-  }
-}
 /* Benefits */
 
 
-.learn-more-link {
+.benefits-section .learn-more-link {
   cursor: pointer;
 }
 
-.benefits-right-arrow {
-  transform: translate(-500%,-12.5%);
+.benefits-section .benefits-right-arrow {
+  transform: translate(-162.5%, -30%);
   transition: transform 770ms;
+  /* max-height: 1rem; */
+  height: 1rem;
 }
 
-.learn-more-link:hover .benefits-right-arrow {
-  transform: translate(0, -12.5%);
+.benefits-section .learn-more-link:hover .benefits-right-arrow {
+  transform: translate(0, -30%);
+}
+
+.benefits-section .benefits-card-icon {
+  height: 2.5rem;
 }
 
 /* .benefits-main-row {
