@@ -1,4 +1,9 @@
 /* Banner */
+@media (min-width: 364px) {
+  #home-banner h1 br {
+    display: inline !important;
+  }
+}
 
 #home-banner .home-banner-img-container {
   min-height: 16rem;
@@ -20,9 +25,9 @@
 @media (min-width: 992px) {
 
   #home-banner-image {
-    width: 180%;
-    right: -40%;
-    top: -10%;
+    width: 160%;
+    right: -35%;
+    top: -20%;
   }
 }
 
@@ -30,7 +35,7 @@
 
   #home-banner-image {
     width: 150%;
-    right: -25.5%;
+    right: -30%;
     top: -45%;
   }
 }
@@ -39,7 +44,7 @@
 
   #home-banner-image {
     width: 120%;
-    right: -5.5%;
+    right: -15.5%;
     top: -55%;
   }
 }
@@ -85,7 +90,7 @@
 
 /* Trusted By Businesses */
 
-.dotted-background{
+.dotted-background {
   bottom: -50% !important;
   transform: translate(0, 10%);
 }
@@ -101,30 +106,34 @@
 }
 
 /* API for Businesses */
-.api-businesses-section .contact-us-button{
+.api-businesses-section .contact-us-button {
   background-color: var(--steel-pink-color);
   font-size: 0.75em !important;
- }
+}
 
 /* Payout Details */
-.payout-details-section .payout-details-wrapper{
+.payout-details-section .payout-details-wrapper {
   padding: 3px !important;
   width: 90% !important;
 }
-.payout-details-section .payout-details-col{
+
+.payout-details-section .payout-details-col {
   flex: 0 0 12.5%;
 }
-.payout-details-section .payout-details-col img{
+
+.payout-details-section .payout-details-col img {
   max-height: 1.9rem;
 }
-.payout-details-section .payout-details-col.header-payout-details{
+
+.payout-details-section .payout-details-col.header-payout-details {
   max-height: none;
 }
-.payout-details-section .payout-details-text-col{
+
+.payout-details-section .payout-details-text-col {
   flex: 0 0 37.5%;
 }
 
 /* World In Hands */
-.world-in-hands-section .world-hands-map{
+.world-in-hands-section .world-hands-map {
   bottom: 0;
 }

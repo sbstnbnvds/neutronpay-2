@@ -15,7 +15,7 @@ const Banner = () => {
         <Row className='pt-5 pb-2 mx-0 banner-main-row align-items-stretch justify-content-center'>
           <Col xxl={6} xl={7} lg={8} md={10} className='home-banner-text p-0'>
 
-            <h1 className='text-capitalize display-2 fw-800'>Payments at <br className='' /> the speed of light
+            <h1 className='text-capitalize display-2 fw-800'>Payments at <br className='d-none' /> the speed of light
             </h1>
             <p className='fs-2 steel-pink-text'>Unlocking the power of Lightning Network</p>
           </Col>
