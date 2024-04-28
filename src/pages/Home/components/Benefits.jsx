@@ -49,7 +49,7 @@ const Benefits = () => {
                 <Row className=''>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius aliquid nobis! Quisquam iusto aliquam dolores, nemo nisi libero asperiores</p>
                 </Row>
-                <Row onClick={handleClick} className='justify-content-between mt-5 learn-more-link'>
+                <Row onClick={handleClick} className='justify-content-between mt-5 learn-more-link cursor-pointer'>
                   <Col xs={6}>
                     <p className=''>Learn more...</p>
                   </Col>

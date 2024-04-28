@@ -27,14 +27,14 @@ const TrustedByBusinesses = () => {
             lg={7}
             xl={8}>
             <Row
-              className='mx-0 justify-content-evenly gy-4 gy-xl-0 py-0 mt-0'>
-              <Col xs={5} md={4} lg={5} xl={3} >
+              className='mx-0 justify-content-evenly justify-content-md-between justify-content-lg-evenly justify-content-xl-between gy-4 gy-xl-0 py-0 mt-0'>
+              <Col xs={6} md={4} lg={5} xl={3} >
                 <img src={premiseIcon} className='w-100' alt="" />
               </Col>
-              <Col xs={5} md={4} lg={5} xl={3}>
+              <Col xs={6} md={4} lg={5} xl={3}>
                 <img src={microWorkersIcon} className='w-100' alt="" />
               </Col>
-              <Col xs={5} md={4} lg={5} xl={3}>
+              <Col xs={6} md={4} lg={5} xl={3}>
                 <img src={BitGoIcon} className='w-100' alt="" />
               </Col>
             </Row>

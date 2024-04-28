@@ -24,7 +24,6 @@ const Home = () => {
     <APIForEAndB/>
     <PayoutDetails/>
     <YourWorldInYourHands/>
-    
   </>
     
   )

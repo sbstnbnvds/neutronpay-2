@@ -55,3 +55,9 @@ button.transition-1 {
 button.transition-1:hover {
   font-size: 0.8125em !important;
 }
+
+/* Tools */
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

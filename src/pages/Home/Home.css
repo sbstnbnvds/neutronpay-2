@@ -51,11 +51,6 @@
 
 /* Benefits */
 
-
-.benefits-section .learn-more-link {
-  cursor: pointer;
-}
-
 .benefits-section .benefits-right-arrow {
   transform: translate(-162.5%, -30%);
   transition: transform 770ms;
@@ -97,12 +92,16 @@
 
 /* Worldwide Reach */
 
-.worldwide-reach-section img {
-  width: 80% !important;
-}
-
 .worldwide-reach-section .text-box-1 p {
   font-size: 0.75em !important;
+}
+
+.worldwide-reach-section .text-box-1 .message-sup-text {
+  font-size: 0.625em !important;
+}
+
+.worldwide-reach-section .bitcoin-sign {
+  height: 1.25em !important;
 }
 
 /* API for Businesses */

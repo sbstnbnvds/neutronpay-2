@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <section className='app-banner py-5'>
       <Container className='px-0'>
-        <Row className='m-0 my-5 py-5 px-3 align-items-center gy-5'>
+        <Row className='m-0 my-5 px-3 align-items-center gy-5'>
           <Col className='px-3' xl={7} lg={6} xs={12}>
             <h1 className='display-1 text-uppercase fw-800'>tap, pay, go</h1>
 

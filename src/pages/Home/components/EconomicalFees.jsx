@@ -13,21 +13,21 @@ const EconomicalFees = () => {
     <section className='economical-fees-section eerie-black-background'>
       <Container
       className='my-3'>
-        <Row className='w-100 px-5 mx-0 py-5 justify-content-center align-items-center'>
+        <Row className='w-100 px-1 mx-0 py-5 justify-content-center align-items-center'>
           <Col
-           lg={6}
-           className='d-flex flex-column align-items-center'>
+           md={6}
+           className='d-flex flex-column align-items-center px-0 px-md-4'>
             <h2 className='grape-text text-capitalize fw-semibold display-5 align-self-start'>economical fees</h2>
             <p className='fw-normal text-light mb-5'>Why pay more when you can pay less? Lightning Network operates with minimal fees, making it the smart choice for both bustling businesses and daily personal expenses.</p>
 
             <img
               src={graph}
               alt=""
-              className='w-75 px-sm-5' />
+              className='w-75 px-sm-5 px-md-1' />
           </Col>
           <Col
             xs={6}
-            className='d-none d-lg-block'>
+            className='d-none d-md-block'>
             <img src={backgroundImage} className='w-100 rounded-4' alt="" />
           </Col>
         </Row>
