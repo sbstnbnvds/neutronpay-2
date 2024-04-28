@@ -1,4 +1,4 @@
-import React, { useEffect,  useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './NavBar.css'
 
 import { NavLink, useLocation } from 'react-router-dom'
@@ -20,7 +20,8 @@ const NavBar = () => {
   let location = useLocation();
 
   useEffect(() => {
-    if (location.pathname == '/company' || location.pathname == '/blog') {
+    if (location.pathname == '/company'
+      || location.pathname == '/blog') {
       setDarkMode(true);
     } else {
       setDarkMode(false);

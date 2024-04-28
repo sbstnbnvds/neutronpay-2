@@ -1,24 +1,46 @@
-span.line {
-  display: inline-block;
-}
-
 /* Banner */
 
 #home-banner .home-banner-img-container {
-  /* height: 10rem; */
+  min-height: 16rem;
 }
 
 #home-banner-image {
-  right:-155% !important;
   width: 127.5%;
-  max-height: 620px !important;
+  top: -10%;
+  right: -10%;
 }
-@media (min-width: 1400px) {
+
+@media (min-width: 390px) {
+
+  #home-banner-image {
+    top: -30%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #home-banner-image {
+    width: 180%;
+    right: -40%;
+    top: -10%;
+  }
+}
+
+@media (min-width: 1200px) {
 
   #home-banner-image {
     width: 150%;
-    right: -5.5% !important;
-    top: -25%;
+    right: -25.5%;
+    top: -45%;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #home-banner-image {
+    width: 120%;
+    right: -5.5%;
+    top: -55%;
   }
 }
 
@@ -51,9 +73,9 @@ span.line {
 
 /* Lightning Network Advantage  */
 
-.lightning-network-advantage h2 {
+/* .lightning-network-advantage h2 {
   width: 14em !important;
-}
+} */
 @supports (-webkit-appearance: none) {
   .lightning-network-advantage h2 {
     -webkit-background-clip: text !important;

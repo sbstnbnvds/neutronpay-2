@@ -16,7 +16,6 @@ import YourWorldInYourHands from './components/YourWorldInYourHands';
 const Home = () => {
   return (<>
     <Banner/>
-    <Benefits/>
     <LightningNetworkAdvantage />
     <TrustedByBusinesses/>
     <InstantPayments/>

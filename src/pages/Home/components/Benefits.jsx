@@ -15,11 +15,11 @@ const Benefits = () => {
     console.log('handleClick');
   };
   return (
-    <section className="benefits-section pt-3 pb-5">
+    <section className="benefits-section pt-3 pb-5 position-relative z-3">
       <Container>
 
         <Row className='mx-0 px-sm-5 justify-content-center benefits-main-row gy-5'>
-          <Col lg={4} md={10} xs={12} className='px-sm-4'>
+          <Col xl={4} lg={4} md={8} xs={12} className='px-sm-4 '>
             <Row className='h-100'>
               <Col xs={12} className='rounded-4 shadow benefits-card pt-5 pb-4 px-4 h-100'>
                 <Row className='mb-5'>
@@ -35,7 +35,7 @@ const Benefits = () => {
               </Col>
             </Row>
           </Col>
-          <Col lg={4} md={10} xs={12} className='px-sm-4'>
+          <Col xl={4} lg={4} md={8} xs={12} className='px-sm-4 '>
             <Row className='h-100'>
               <Col xs={12} className='rounded-4 shadow benefits-card pt-5 px-4 pb-1 eerie-black-background text-white'>
                 <Row className='mb-5 justify-content-between align-items-center'>
@@ -60,7 +60,7 @@ const Benefits = () => {
               </Col>
             </Row>
           </Col>
-          <Col lg={4} md={10} xs={12} className='px-sm-4'>
+          <Col xl={4} lg={4} md={8} xs={12} className='px-sm-4 '>
             <Row className='h-100'>
               <Col xs={12} className='rounded-4 shadow benefits-card pt-5 pb-4 px-4 h-100'>
                 <Row className='mb-5'>
