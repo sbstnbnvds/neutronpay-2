@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container'
 
 import premiseIcon from '../../../assets/images/home/premise-icon.svg'
 import microWorkersIcon from '../../../assets/images/home/microWorkers-icon.svg'
+import BitGoIcon from '../../../assets/images/home/BitGo-icon.svg'
+
 import dottedBackground from '../../../assets/images/home/dotted-background.svg'
 
 const TrustedByBusinesses = () => {
@@ -33,7 +35,7 @@ const TrustedByBusinesses = () => {
                 <img src={microWorkersIcon} className='w-100' alt="" />
               </Col>
               <Col xs={5} md={4} lg={5} xl={3}>
-                <img src={premiseIcon} className='w-100' alt="" />
+                <img src={BitGoIcon} className='w-100' alt="" />
               </Col>
             </Row>
           </Col>
