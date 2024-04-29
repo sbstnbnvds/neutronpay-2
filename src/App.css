@@ -48,12 +48,14 @@ body{
 
 /* Button */
 
-button.transition-1 {
-  transition: all 0.15s ease-out;
+button.transition-1,
+.transition-1 {
+  transition: all 300ms ease-out;
 }
 
-button.transition-1:hover {
-  font-size: 0.8125em !important;
+button.transition-1:hover,
+.transition-1:hover {
+  transform: scale(1.0625);
 }
 
 /* Tools */

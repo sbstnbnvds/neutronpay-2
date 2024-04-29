@@ -23,21 +23,7 @@
   margin: 0px;
 }
 
-.engineered-for-developers button.transition-1:hover {
-  font-size: 1.125em !important;
-}
-
-/* Pay Portal */
-
-.pay-portal-section h2 {
-  width: 6.5em;
-}
-
 /* Enabled Countries */
-
-.enabled-countries-section button.transition-1:hover {
-  font-size: 1.125em !important;
-}
 
 .enabled-countries-section .flag-wrapper {
   width: 8%
@@ -55,9 +41,6 @@
 .enabled-countries-section .slide-in-up {
   animation: 0.35s ease-in-out 0s slide-in-up;
 }
-/* .enabled-countries-section .slide-out-down {
-  animation: 0.15s ease-in-out 0s slide-out-down;
-} */
 .enabled-countries-section .slide-out-down {
   height: 0px !important;
 }

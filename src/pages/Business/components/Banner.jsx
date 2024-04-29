@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col';
 
 const Banner = () => {
   return (
-    <header id="business-banner" className='overflow-hidden w-100'>
-      <Row className='pt-5 pb-5 mb-5 banner-main-row justify-content-center'>
+    <header id="business-banner">
+      <Row className='pt-5 pb-5 mb-5 banner-main-row mx-0 justify-content-center'>
         <Col xxl={7} lg={10} md={9} sm={12} className='pt-5 '>
           <Row className='pt-5 pb-5'>
 

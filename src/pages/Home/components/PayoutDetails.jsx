@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 
 import { CanadaFlag, VietnamFlag, PhilippinesFlag, ThailandFlag, IndonesiaFlag } from '../../../components/Tools'
@@ -10,142 +12,134 @@ import tick from '../../../assets/images/tick.svg'
 import cross from '../../../assets/images/cross.svg'
 
 const PayoutDetails = () => {
+
+  const payoutList = [
+    {
+      "country": "canada",
+      "image": CanadaFlag,
+      "massPayouts": true,
+      "payIn": true,
+      "payOut": false,
+      "bankWithdraw": true,
+      "mobileWithdraw": true,
+    },
+    {
+      "country": "vietnam",
+      "image": VietnamFlag,
+      "massPayouts": true,
+      "payIn": false,
+      "payOut": false,
+      "bankWithdraw": true,
+      "mobileWithdraw": true,
+    },
+    {
+      "country": "philippines",
+      "image": PhilippinesFlag,
+      "massPayouts": true,
+      "payIn": false,
+      "payOut": false,
+      "bankWithdraw": false,
+      "mobileWithdraw": true,
+    },
+    {
+      "country": "thailand",
+      "image": ThailandFlag,
+      "massPayouts": true,
+      "payIn": true,
+      "payOut": false,
+      "bankWithdraw": true,
+      "mobileWithdraw": true,
+    },
+    {
+      "country": "indonesia",
+      "image": IndonesiaFlag,
+      "massPayouts": true,
+      "payIn": false,
+      "payOut": false,
+      "bankWithdraw": true,
+      "mobileWithdraw": true,
+    },
+  ]
   return (
-    <section className='payout-details-section py-5'>
+    <section className='payout-details-home-section py-5'>
       <Container>
 
-          <Row className='w-100 m-0 rounded-2 py-4 px-2 shadow shadow-lg'>
-            <h2 className='grape-text text-capitalize text-center fw-800 fs-1 pb-5'>payout details</h2>
+        <Row className='w-100 m-0 rounded-5 py-4 px-2 shadow-sm shadow-lg'>
+          <h2 className='grape-text text-capitalize text-center fw-800 fs-1 pb-4'>payout details</h2>
 
-
-            <Row className='w-100 m-0 p-0'>
-              <div className='d-flex ms-auto justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Mass payouts in Bitcoin</div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Pay-in</div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Pay-out</div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Bank withdraw</div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 payout-details-col header-payout-details'>Mobile money withdraw</div>
-            </Row>
-            <Row className='m-0 p-0 py-3'>
-              <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
-                <img src={CanadaFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
-                <p className='m-0 fs-4'>Canada</p>
-              </div>
-
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
-                <img src={roundedTick} alt="" className='h-100' />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-
-            </Row>
-
-            <Row className='m-0 p-0 py-3'>
-              <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
-                <img src={VietnamFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
-                <p className='m-0 fs-4'>Vietnam</p>
-              </div>
-
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
-                <img src={roundedTick} alt="" className='h-100' />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-
-            </Row>
-
-
-            <Row className='m-0 p-0 py-3'>
-              <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
-                <img src={PhilippinesFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
-                <p className='m-0 fs-4'>Philippines</p>
-              </div>
-
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
-                <img src={roundedTick} alt="" className='h-100' />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-
-            </Row>
-
-
-            <Row className='m-0 p-0 py-3'>
-              <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
-                <img src={ThailandFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
-                <p className='m-0 fs-4'>Thailand</p>
-              </div>
-
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
-                <img src={roundedTick} alt="" className='h-100' />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-            </Row>
-
-            <Row className='m-0 p-0 py-3'>
-              <div className='d-flex payout-details-text-col m-0 p-0 align-items-center justify-content-center'>
-                <img src={IndonesiaFlag} alt="" className='col-1 rounded-circle border border-2 me-4' />
-                <p className='m-0 fs-4'>Indonesia</p>
-              </div>
-
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col h-100'>
-                <img src={roundedTick} alt="" className='h-100' />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={cross} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-              <div className='d-flex justify-content-center align-items-center text-center fs-6 p-0 m-0 payout-details-col'>
-                <img src={tick} alt="" />
-              </div>
-            </Row>
-
+          <Row className='m-0 p-0 pe-md-3 pe-lg-0 pb-3 align-items-center'>
+            <Col
+              xxl={3}
+              lg={4}
+              sm={3}
+              xs={4}
+              className='payout-first-column'></Col>
+            <Col className='text-center fs-5'>
+              Bitcoin mass payouts
+            </Col>
+            <Col className='text-center d-none d-sm-block fs-5'>
+              Pay-in
+            </Col>
+            <Col className='text-center d-none d-md-block fs-5'>
+              Pay-out
+            </Col>
+            <Col className='text-center fs-5'>
+              Bank withdraw
+            </Col>
+            <Col className='text-center d-none d-sm-block fs-5 p-sm-1'>
+              Mobile money withdraw
+            </Col>
           </Row>
+          {payoutList.map((country, index) => <Row className='mx-0 p-0 pe-md-3 pe-lg-0 pb-2 pb-sm-3 pb-md-4 align-items-center' key={index}>
+            <Col
+              xxl={3}
+              lg={4}
+              sm={3}
+              xs={4}
+              className='text-capitalize fs-2 ps-xxl-2 ps-xl-5 ps-lg-4 d-flex ps-md-3 align-items-center payout-first-column'>
+              <Row className='mx-0 align-items-center'>
+                <Col
+                  lg={3}
+                  xl={3}
+                  xxl={3}
+                  xs={12}
+                  className=''>
+                  <img src={country.image} alt="" className='w-100 me-xl-3 me-xxl-1 rounded-circle border border-3 shadow-sm d-none d-lg-inline' />
+                </Col>
+                <Col
+                  lg={9}
+                  xl={8}>
+                  <p className='pt-lg-1 m-0'>{country.country}</p>
+                </Col>
+              </Row>
+            </Col>
+            <Col className='justify-content-center d-flex'>
+              <img src={country.massPayouts ? roundedTick : cross} alt="" className='w-50 p-xxl-3 p-xl-2 p-lg-2 p-md-1 p-sm-1 p-2' />
+            </Col>
+            <Col className='justify-content-center d-none d-sm-flex'>
+              <img src={country.payIn ? tick : cross} alt="" className='w-50 p-xxl-1' />
+            </Col>
+            <Col className='justify-content-center d-none d-md-flex'>
+              <img src={country.payOut ? tick : cross} alt="" className='w-50' />
+            </Col>
+            <Col className='d-flex justify-content-center'>
+              <img src={country.bankWithdraw ? tick : cross} alt="" className='w-50' />
+            </Col>
+            <Col className='justify-content-center d-none d-sm-flex'>
+              <img src={country.mobileWithdraw ? tick : cross} alt="" className='w-50' />
+            </Col>
+          </Row>
+          )}
+          <Row className='mx-0 justify-content-center pt-5 pb-4'>
+            <Col className='d-flex justify-content-center steel-pink-to-grape-background col-auto rounded-5 text-decoration-none transition-1'
+              as={Link}>
+              <Row className='m-0 bg-white rounded-5 px-sm-4 px-5 py-1 text-black'>
+
+                Learn more
+              </Row>
+            </Col>
+          </Row>
+        </Row>
 
       </Container>
     </section>

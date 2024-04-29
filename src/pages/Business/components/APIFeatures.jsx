@@ -16,7 +16,7 @@ const APIFeatures = () => {
       <Container>
 
         <h2 className='text-center text-white text-uppercase display-1 fw-800 '>API features</h2>
-        <Row className='w-100 justify-content-center px-5'>
+        <Row className='mx-0 justify-content-center px-5'>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
               <Col xs={2} className='my-3 shadow-lg'>

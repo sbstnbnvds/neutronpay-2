@@ -41,7 +41,7 @@ const AvailableNow = () => {
 
         <Row className='m-0 justify-content-center'>
           <Col lg={7} sm={10} xs={8}>
-            <Row className='w-100 align-items-center ps-sm-5 gy-4'>
+            <Row className='mx-0 align-items-center ps-sm-5 gy-4'>
               <Col sm={5} onClick={() => console.log('click test')}>
                 <img className='w-100 px-3 px-sm-0' src={Apple} alt="Download on the App Store" />
               </Col>

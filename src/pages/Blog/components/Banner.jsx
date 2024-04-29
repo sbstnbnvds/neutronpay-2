@@ -66,12 +66,12 @@ const Banner = () => {
         </Row>
       </Container>
 
-      <Row className='w-100 justify-content-end position-absolute top-0 end-0 m-0' >
+      <Row className='justify-content-end position-absolute top-0 end-0 m-0' >
         <Col xs={8} className='m-0 p-0'>
           <img src={dottedTop} alt="" className='w-100 m-0 p-0' />
         </Col>
       </Row>
-      <Row className='w-100 justify-content-start position-absolute bottom-0 start-0 m-0' >
+      <Row className='justify-content-start position-absolute bottom-0 start-0 m-0' >
         <Col xs={8} className='m-0 p-0'>
           <img src={dottedBottom} alt="" className='w-100 m-0 p-0' />
         </Col>

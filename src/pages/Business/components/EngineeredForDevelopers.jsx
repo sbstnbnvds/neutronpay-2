@@ -13,9 +13,9 @@ const EngineeredForDevelopers = () => {
   return (
     <section className='engineered-for-developers'>
       <Container>
-        <Row className='w-100 px-5 mx-0 py-5 justify-content-center align-items-center flex-row-reverse gy-5'>
+        <Row className='px-5 mx-0 py-5 justify-content-center align-items-center flex-row-reverse gy-5'>
           <Col lg={6} className='px-3 d-flex flex-column'>
-            <h2 className='grape-text text-capitalize fw-semibold display-5 mb-3 text-center w-100'>Engineered for developers</h2>
+            <h2 className='grape-text text-capitalize fw-semibold display-5 mb-3 text-center'>Engineered for developers</h2>
 
             <ul className='fs-4 fw-normal ps-0'>
               <li className='mb-3 d-flex'>
