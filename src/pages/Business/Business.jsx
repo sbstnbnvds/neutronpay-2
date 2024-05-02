@@ -19,7 +19,7 @@ const Business = () => {
       <EngineeredForDevelopers />
       <PayPortal />
       <EnabledCountries />
-      {/* <PayoutDetails /> */}
+      <PayoutDetails />
     </>
   )
 }

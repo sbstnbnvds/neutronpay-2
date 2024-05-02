@@ -26,32 +26,31 @@
 /* Enabled Countries */
 
 .enabled-countries-section .flag-wrapper {
-  width: 8%
+  width: 12.5%
 }
 
-
-.enabled-countries-section .enabled-row-wrapper:hover .enabled-countries-continent {
-  font-size: 1.75rem !important;
+.text-transition {
+  transform: scale(1.25);
 }
 
-.enabled-countries-section .flags-wrapper {
-  overflow-y: hidden;
+.continent-p {
+  transition: transform 1s;
 }
 
-.enabled-countries-section .slide-in-up {
-  animation: 0.35s ease-in-out 0s slide-in-up;
-}
-.enabled-countries-section .slide-out-down {
-  height: 0px !important;
-}
+/* Payout Details */
 
-@keyframes slide-in-up {
-  0%{max-height: 0px;}
-  100% {max-height: 180px;}
-  
-}
+@media (max-width: 375px) {
+  .business-payout-details .payout-first-column{
+    width: 27.5%;
 
-@keyframes slide-out-down {
-  0%{max-height: 180px;}
-  100% {max-height: 0px;}
+  }
+
+  .business-payout-details .payout-first-column p {
+    display: none !important;
+  }
+
+  .business-payout-details .payout-first-column img {
+    display: inline !important;
+  }
+
 }

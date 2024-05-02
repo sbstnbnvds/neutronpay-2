@@ -51,31 +51,13 @@
 
 /* Benefits */
 
-.benefits-section .benefits-right-arrow {
-  transform: translate(-162.5%, -30%);
-  transition: transform 770ms;
-  /* max-height: 1rem; */
-  height: 1rem;
-}
-
-.benefits-section .learn-more-link:hover .benefits-right-arrow {
-  transform: translate(0, -30%);
-}
-
 .benefits-section .benefits-card-icon {
   height: 2.5rem;
 }
 
-/* .benefits-main-row {
-  padding-right: 4rem !important;
-  padding-left: 4rem !important;
-} */
 
 /* Lightning Network Advantage  */
 
-/* .lightning-network-advantage h2 {
-  width: 14em !important;
-} */
 @supports (-webkit-appearance: none) {
   .lightning-network-advantage h2 {
     -webkit-background-clip: text !important;
@@ -83,12 +65,6 @@
   }
 }
 
-/* Trusted By Businesses */
-
-.dotted-background {
-  bottom: -50% !important;
-  transform: translate(0, 10%);
-}
 
 /* Worldwide Reach */
 

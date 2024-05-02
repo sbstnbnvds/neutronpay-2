@@ -32,9 +32,9 @@ const AvailableNow = () => {
       <Container>
 
         <h2 className='text-center text-capitalize grape-text display-2 fw-semibold'>Available now!</h2>
-        <Row className='m-0 justify-content-evenly py-5 px-5'>
-          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={9} key={index}>
-            <img src={flag[1]} alt="" className='w-100 flag-app mb-3' />
+        <Row className='m-0 justify-content-center justify-content-sm-evenly py-5 px-md-2'>
+          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={6} className='px-5 px-sm-1' key={index}>
+            <img src={flag[1]} alt="" className='w-100 flag-app mb-3 px-3 px-xl-4' />
             <p className='fs-4 text-center'>{flag[0]}</p>
           </Col>)}
         </Row>

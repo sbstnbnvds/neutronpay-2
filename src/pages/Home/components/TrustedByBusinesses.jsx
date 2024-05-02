@@ -8,7 +8,7 @@ import premiseIcon from '../../../assets/images/home/premise-icon.svg'
 import microWorkersIcon from '../../../assets/images/home/microWorkers-icon.svg'
 import BitGoIcon from '../../../assets/images/home/BitGo-icon.svg'
 
-import dottedBackground from '../../../assets/images/home/dotted-background.svg'
+import dottedBackground from '../../../assets/images/dotted-background.svg'
 
 const TrustedByBusinesses = () => {
   return (
@@ -16,12 +16,6 @@ const TrustedByBusinesses = () => {
       <h2 className='display-2 text-uppercase fw-800 text-center text-white position-relative z-3 px-3'>trusted by businesses</h2>
       <Container>
         <Row className='mx-0 pt-4 pb-5 justify-content-evenly z-3 position-relative align-items-center'>
-          <Col
-            className='text-white fw-semibold fs-1 text-center'
-            xs={12}
-            md={6}
-            lg={5}
-            xl={4}>Trusted Partners</Col>
           <Col
             xs={12}
             lg={7}
@@ -40,15 +34,15 @@ const TrustedByBusinesses = () => {
             </Row>
           </Col>
         </Row>
-        <Row className="w-100 justify-content-center">
+        <Row className="mx-0 justify-content-center">
           <Col
             xs={12}
             md={9}
             lg={7}
-            xl={6}
+            xl={5}
             xxl={5}
             className='position-relative'>
-            <img src={dottedBackground} className='w-100 position-absolute dotted-background' alt="" />
+            <img src={dottedBackground} className='w-100 position-absolute bottom-0 start-0' alt="" />
           </Col>
         </Row>
       </Container>

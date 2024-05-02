@@ -24,7 +24,7 @@ const WorldwideReach = () => {
             <img src={backgroundImage} className='rounded-4 w-75' alt="" />
             <Container className="text-box-1 position-absolute top-0 h-100 end-0 px-0">
 
-              <Row className='w-100 h-100 align-items-end justify-content-between d-none d-sm-flex flex-column'>
+              <Row className='mx-0 user-select-none pe-3 h-100 align-items-end justify-content-between d-none d-sm-flex flex-column'>
                 <Col
                   xs={6}
                   md={6}
