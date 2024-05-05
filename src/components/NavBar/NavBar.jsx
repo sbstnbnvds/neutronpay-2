@@ -27,6 +27,9 @@ const NavBar = () => {
       setDarkMode(false);
     }
     window.scrollTo(0, 0);
+    console.log(location)
+    
+    console.log("navbar location function")
   }, [location]);
 
   useEffect(() => {

@@ -4,8 +4,54 @@
   filter: drop-shadow(0.75rem 0.5rem 0px black);
 }
 
+.LNURL-advance {
+  background-color: #521c86;
+}
+
+.neutronpay-send-cash {
+  background-color: #feb141;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+
+.carousel-control-next img,
+.carousel-control-prev img {
+  transform: translateY(200px)
+}
+
+@media (min-width: 768px) {
+
+  .carousel-control-next img,
+  .carousel-control-prev img {
+    transform: translateY(0px)
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    padding-right: 0.875rem !important;
+    padding-left: 0.875rem;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem;
+  }
+}
+
 /* Available Now */
 
 section.app-available-now .flag-app {
-  filter: drop-shadow(4px 4px 8px black);
+  filter: drop-shadow(4px 8px 8px #000000);
 }
