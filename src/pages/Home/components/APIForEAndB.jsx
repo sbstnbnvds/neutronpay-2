@@ -18,8 +18,8 @@ const APIForEAndB = () => {
           <p className='text-white text-center fs-6'>Neutron API is a powerful gateway designed for enterprises and businesses seeking to integrate lightning-fast payment solutions into their existing systems. Our API is engineered to provide a seamless, secure, and scalable payment experience, tailored to meet the diverse needs of today's businesses.</p>
         </Row>
         <Row className='mx-0 pt-1 pb-5 justify-content-evenly z-3 position-relative'>
-          <Col xs={9} className='text-white text-center px-5 fs-4'>
-            <Button className='rounded-5 contact-us-button steel-pink-to-grape-background transition-1 border-0'>Contact our experts</Button>
+          <Col xs={9} className='text-white text-center px-5 fs-4 d-flex justify-content-center'>
+            <a href='https://contact.neutronpay.com/' target='__blank' className='rounded-5 contact-us-button steel-pink-to-grape-background transition-1 border-0 text-decoration-none text-white px-3 py-2 d-block'>Contact our experts</a>
           </Col>
         </Row>
 

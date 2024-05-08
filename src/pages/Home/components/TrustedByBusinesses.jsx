@@ -15,20 +15,18 @@ const TrustedByBusinesses = () => {
     <section className='eerie-black-background pt-5 position-relative overflow-y-hidden'>
       <h2 className='display-2 text-uppercase fw-800 text-center text-white position-relative z-3 px-3'>trusted by businesses</h2>
       <Container>
-        <Row className='mx-0 pt-4 pb-5 justify-content-evenly z-3 position-relative align-items-center'>
+        <Row className='mx-0 pt-4 pb-5 z-3 position-relative align-items-center'>
           <Col
-            xs={12}
-            lg={7}
-            xl={8}>
+            xs={12}>
             <Row
-              className='mx-0 justify-content-evenly justify-content-md-between justify-content-lg-evenly justify-content-xl-between gy-4 gy-xl-0 py-0 mt-0'>
-              <Col xs={6} md={4} lg={5} xl={3} >
+              className='mx-0 justify-content-evenly justify-content-md-between justify-content-lg-evenly justify-content-xl-between gy-4 gy-xl-0 py-0  px-lg-4 mt-0'>
+              <Col xs={6} md={4} lg={4} xl={3}  className='px-lg-4 px-xxl-5'>
                 <img src={premiseIcon} className='w-100' alt="" />
               </Col>
-              <Col xs={6} md={4} lg={5} xl={3}>
+              <Col xs={6} md={4} lg={4} xl={3} className='px-lg-4 px-xxl-5'>
                 <img src={microWorkersIcon} className='w-100' alt="" />
               </Col>
-              <Col xs={6} md={4} lg={5} xl={3}>
+              <Col xs={6} md={4} lg={4} xl={3} className='px-lg-4 px-xxl-5'>
                 <img src={BitGoIcon} className='w-100' alt="" />
               </Col>
             </Row>

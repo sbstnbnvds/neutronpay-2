@@ -1,11 +1,8 @@
 /* Banner */
 
-section.blog-banner .main-blog-pic {
-  height: 20rem;
-}
-
-section.blog-banner .secondary-blog-pic {
-  height: 8rem;
+section.blog-banner .main-blog-pic,
+section.blog-banner .secondary-blog-pic  {
+  aspect-ratio: 8 / 5;
 }
 
 section.blog-banner .middle-row:before,
@@ -26,7 +23,7 @@ section.blog-banner .middle-row:after {
 /* Blogs */
 
 section.blogs-section .single-blog-pic {
-  height: 12rem;
+  aspect-ratio: 8 / 5;
 }
 
 section.blogs-section .middle-column:before,

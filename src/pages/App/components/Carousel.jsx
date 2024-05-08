@@ -60,6 +60,52 @@ const AppCarousel = () => {
       </Row>
       <Container className='border border-4 border-black rounded-4 px-0 overflow-hidden'>
         <Carousel className='' indicators={false} interval={null} prevIcon={prevButton} nextIcon={nextButton}>
+          <Carousel.Item className='neutronpay-send-cash'>
+            <Row className='mx-0 py-5 py-md-0 justify-content-end position-relative'>
+              <Col className='d-md-none'>
+                <div className="ps-3">
+                  <h3 className='text-capitalize display-3 pe-5 mb-5 mb-md-4 mb-xl-5 mb-xxl-4 fw-semibold'>Neutronpay's <br />send cash</h3>
+                  <Col
+                    xs={12}
+                    lg={10}
+                    as='ul'
+                    className='fs-3 ps-0'
+                  >
+                    {thirdSlideContent.map((listItem, key) => <li className='mb-4 mb-md-3 mb-lg-4 mb-xl-5 d-flex align-items-center' key={key}>
+                      <Col as='img' xs={2} lg={2} xl={2} xxl={1} src={listItem.icon} alt='' className='me-2 me-md-0 me-lg-0 me-xl-1  me-xxl-3 px-0 px-sm-2 px-lg-3 px-xl-4 px-xxl-0' />
+                      <p className='fs-5 lh-sm pe-4 pe-lg-5 pe-xl-4 mb-xxl-0'>
+                        {listItem.paragraph}
+                      </p>
+
+                    </li>)}
+                  </Col>
+
+                </div>
+              </Col>
+              <Col className='position-absolute translate-middle-y top-50 start-0 ps-2 ps-xl-5 d-none d-md-block' xs={7} lg={8} xl={8} xxl={10}>
+                <div className="ps-3 ps-xxl-5">
+                  <h3 className='text-capitalize display-3 pe-5 mb-4 mb-xl-5 mb-xxl-4 fw-semibold'>Neutronpay's <br />send cash</h3>
+                  <Col
+                    xs={12}
+                    lg={10}
+                    as='ul'
+                    className='fs-3 ps-0'
+                  >
+                    {thirdSlideContent.map((listItem, key) => <li className='mb-3 mb-lg-4 mb-xl-5 d-flex align-items-center' key={key}>
+                      <Col as='img' xs={2} lg={2} xl={2} xxl={1} src={listItem.icon} alt='' className=' me-lg-0 me-xl-1  me-xxl-3 px-0 px-sm-2 px-lg-3 px-xl-4 px-xxl-0' />
+                      <p className='fs-5 lh-sm pe-4 pe-lg-5 pe-xl-4 pe-xxl-5 mb-xxl-0'>
+                        {listItem.paragraph}
+                      </p>
+
+                    </li>)}
+                  </Col>
+
+                </div>
+              </Col>
+
+              <Col as='img' src={sendCashImage} xs={6} xl={5} xxl={4} className='p-0 d-none d-md-block'></Col>
+            </Row>
+          </Carousel.Item>
           <Carousel.Item className='eerie-black-background p-4 text-white start-simplifying'>
             <h3 className='steel-pink-text text-center display-4 fw-semibold text-capitalize mb-3'>start simplifying</h3>
             <p className='text-center fs-5 mb-4 mb-sm-3 mb-xl-4'>Neutronpay is more than a payment platform; it's a gateway to a world where payments are no longer boring. Start simplifying your life with Neutronpay today.</p>
@@ -198,52 +244,6 @@ const AppCarousel = () => {
               </Col>
             </Row>
 
-          </Carousel.Item>
-          <Carousel.Item className='neutronpay-send-cash'>
-            <Row className='mx-0 py-5 py-md-0 justify-content-end position-relative'>
-              <Col className='d-md-none'>
-                <div className="ps-3">
-                  <h3 className='text-capitalize display-3 pe-5 mb-5 mb-md-4 mb-xl-5 mb-xxl-4 fw-semibold'>Neutronpay's <br />send cash</h3>
-                  <Col
-                    xs={12}
-                    lg={10}
-                    as='ul'
-                    className='fs-3 ps-0'
-                  >
-                    {thirdSlideContent.map((listItem, key) => <li className='mb-4 mb-md-3 mb-lg-4 mb-xl-5 d-flex align-items-center' key={key}>
-                      <Col as='img' xs={2} lg={2} xl={2} xxl={1} src={listItem.icon} alt='' className='me-2 me-md-0 me-lg-0 me-xl-1  me-xxl-3 px-0 px-sm-2 px-lg-3 px-xl-4 px-xxl-0' />
-                      <p className='fs-5 lh-sm pe-4 pe-lg-5 pe-xl-4 mb-xxl-0'>
-                        {listItem.paragraph}
-                      </p>
-
-                    </li>)}
-                  </Col>
-
-                </div>
-              </Col>
-              <Col className='position-absolute translate-middle-y top-50 start-0 ps-2 ps-xl-5 d-none d-md-block' xs={7} lg={8} xl={8} xxl={10}>
-                <div className="ps-3 ps-xxl-5">
-                  <h3 className='text-capitalize display-3 pe-5 mb-4 mb-xl-5 mb-xxl-4 fw-semibold'>Neutronpay's <br />send cash</h3>
-                  <Col
-                    xs={12}
-                    lg={10}
-                    as='ul'
-                    className='fs-3 ps-0'
-                  >
-                    {thirdSlideContent.map((listItem, key) => <li className='mb-3 mb-lg-4 mb-xl-5 d-flex align-items-center' key={key}>
-                      <Col as='img' xs={2} lg={2} xl={2} xxl={1} src={listItem.icon} alt='' className=' me-lg-0 me-xl-1  me-xxl-3 px-0 px-sm-2 px-lg-3 px-xl-4 px-xxl-0' />
-                      <p className='fs-5 lh-sm pe-4 pe-lg-5 pe-xl-4 pe-xxl-5 mb-xxl-0'>
-                        {listItem.paragraph}
-                      </p>
-
-                    </li>)}
-                  </Col>
-
-                </div>
-              </Col>
-
-              <Col as='img' src={sendCashImage} xs={6} xl={5} xxl={4} className='p-0 d-none d-md-block'></Col>
-            </Row>
           </Carousel.Item>
 
 

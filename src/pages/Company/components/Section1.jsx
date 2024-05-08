@@ -10,7 +10,7 @@ const Section1 = () => {
   return (
     <section className='company-section-1'>
       <Container>
-        <Row className='w-100 px-5 mx-0 py-5 justify-content-evenly align-items-center gy-4'>
+        <Row className=' mx-0 py-5 justify-content-evenly align-items-center gy-4'>
           <Col xl={6} lg={7}>
 
             <p className='fw-normal fs-3'>In a world that is more connected than ever, the way we interact with each other- especially when it comes to financial transactions- shouldn't be confined by borders or timezones</p>

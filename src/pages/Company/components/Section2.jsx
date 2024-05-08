@@ -10,7 +10,7 @@ const Section2 = () => {
   return (
     <section className='company-section-1 eerie-black-background'>
       <Container>
-        <Row className='flex-row-reverse w-100 px-5 mx-0 py-5 justify-content-evenly align-items-center gy-4'>
+        <Row className='flex-row-reverse mx-0 py-5 justify-content-evenly align-items-center gy-4'>
           <Col xl={6} lg={7}>
 
             <p className='fw-normal pe-5 fs-3 text-white'>Powered by the Bitcoin Lightning Network, we believe in leveraging the best of emerging technologies to make this vision a reality. That's why we are harnessing the potential of the Lightning Network. This innovation enables near-instantaneous transactions, setting the foundation for a financial ecosystem that can operate in real - time, anywhere.</p>

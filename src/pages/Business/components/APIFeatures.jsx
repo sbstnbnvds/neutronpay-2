@@ -16,10 +16,10 @@ const APIFeatures = () => {
       <Container>
 
         <h2 className='text-center text-white text-uppercase display-1 fw-800 '>API features</h2>
-        <Row className='mx-0 justify-content-center px-5'>
+        <Row className='mx-0 justify-content-center px-sm-5'>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
-              <Col xs={2} className='my-3 shadow-lg'>
+              <Col xs={4} sm={2} className='my-3'>
                 <img src={Feature1} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
@@ -29,7 +29,7 @@ const APIFeatures = () => {
           </Col>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
-              <Col xs={2} className='my-3 shadow-lg'>
+              <Col xs={4} sm={2} className='my-3'>
                 <img src={Feature2} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
@@ -39,7 +39,7 @@ const APIFeatures = () => {
           </Col>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
-              <Col xs={2} className='my-3 shadow-lg'>
+              <Col xs={4} sm={2} className='my-3'>
                 <img src={Feature3} alt="" className='w-75' />
               </Col>
               <Col xs={12} className='text-center'>
@@ -49,7 +49,7 @@ const APIFeatures = () => {
           </Col>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
-              <Col xs={2} className='my-3 shadow-lg'>
+              <Col xs={4} sm={2} className='my-3'>
                 <img src={Feature4} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
@@ -59,7 +59,7 @@ const APIFeatures = () => {
           </Col>
           <Col xl={4} md={6} xs={12} className='text-white p-3'>
             <Col xs={12} className='api-features-card h-100 fs-5 rounded-3 p-4 align-items-center d-flex flex-column'>
-              <Col xs={2} className='my-3 shadow-lg'>
+              <Col xs={4} sm={2} className='my-3'>
                 <img src={Feature5} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>

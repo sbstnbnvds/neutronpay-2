@@ -7,24 +7,27 @@ import Home from './pages/Home/Home';
 import Business from './pages/Business/Business';
 import AppPage from './pages/App/AppPage';
 import Blog from './pages/Blog/Blog';
+import BlogPage from './pages/Blog/components/BlogPage';
 import Company from './pages/Company/Company';
+
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
 
   return (
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route path='/company' element={<Company/>} />
-          <Route path='/business' element={<Business/>} />
-          <Route path='/app' element={<AppPage/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route exact path='/' element={<Home />}></Route>
+        <Route path='/company' element={<Company />} />
+        <Route path='/business' element={<Business />} />
+        <Route path='/app' element={<AppPage />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:titleURL' element={<BlogPage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

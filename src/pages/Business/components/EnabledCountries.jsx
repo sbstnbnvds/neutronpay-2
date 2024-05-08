@@ -65,8 +65,8 @@ const EnabledCountries = () => {
             <h2 className='text-capitalize display-4 fw-semibold'>Enabled pay-out countries</h2>
             <p className='fs-5 fw-light'>With support for over 20+ different currencies, you'll be able to easily exchange, and transfer money instantly.</p>
 
-            <a href="#" className='align-self-center'>
-              <Button className='text-capitalize rounded-5 steel-pink-background border-0 transition-1'>Contact our API documents</Button>
+            <a href="https://docs.neutronpay.com/?version=latest" target='_blank' className='align-self-center'>
+              <Button className='text-capitalize rounded-5 steel-pink-background border-0 transition-1 text-capitalize'>API docs</Button>
             </a>
           </Col>
           <Col lg={6} md={10} className='text-center'>

@@ -18,8 +18,8 @@ const PayoutDetails = () => {
       "country": "canada",
       "image": CanadaFlag,
       "massPayouts": true,
-      "payIn": true,
-      "payOut": false,
+      "deposit": true,
+      "internalTransfer": true,
       "bankWithdraw": true,
       "mobileWithdraw": true,
     },
@@ -27,8 +27,8 @@ const PayoutDetails = () => {
       "country": "vietnam",
       "image": VietnamFlag,
       "massPayouts": true,
-      "payIn": false,
-      "payOut": false,
+      "deposit": true,
+      "internalTransfer": true,
       "bankWithdraw": true,
       "mobileWithdraw": true,
     },
@@ -36,17 +36,17 @@ const PayoutDetails = () => {
       "country": "philippines",
       "image": PhilippinesFlag,
       "massPayouts": true,
-      "payIn": false,
-      "payOut": false,
-      "bankWithdraw": false,
+      "deposit": false,
+      "internalTransfer": true,
+      "bankWithdraw": true,
       "mobileWithdraw": true,
     },
     {
       "country": "thailand",
       "image": ThailandFlag,
       "massPayouts": true,
-      "payIn": true,
-      "payOut": false,
+      "deposit": false,
+      "internalTransfer": true,
       "bankWithdraw": true,
       "mobileWithdraw": true,
     },
@@ -54,8 +54,8 @@ const PayoutDetails = () => {
       "country": "indonesia",
       "image": IndonesiaFlag,
       "massPayouts": true,
-      "payIn": false,
-      "payOut": false,
+      "deposit": false,
+      "internalTransfer": true,
       "bankWithdraw": true,
       "mobileWithdraw": true,
     },
@@ -74,19 +74,19 @@ const PayoutDetails = () => {
               sm={3}
               xs={4}
               className='payout-first-column'></Col>
-            <Col className='text-center fs-5'>
+            <Col className='text-center fs-5 text-capitalize'>
               Bitcoin mass payouts
             </Col>
-            <Col className='text-center d-none d-sm-block fs-5'>
-              Pay-in
+            <Col className='text-center d-none d-sm-block fs-5 text-capitalize'>
+              Deposit
             </Col>
-            <Col className='text-center d-none d-md-block fs-5'>
-              Pay-out
+            <Col className='text-center d-none d-md-block fs-5 text-capitalize'>
+              Internal transfer
             </Col>
             <Col className='text-center fs-5'>
               Bank withdraw
             </Col>
-            <Col className='text-center d-none d-sm-block fs-5 p-sm-1'>
+            <Col className='text-center d-none d-sm-block fs-5 p-sm-1 text-capitalize'>
               Mobile money withdraw
             </Col>
           </Row>
@@ -117,10 +117,10 @@ const PayoutDetails = () => {
               <img src={country.massPayouts ? roundedTick : cross} alt="" className='w-50 p-xxl-3 p-xl-2 p-lg-2 p-md-1 p-sm-1 p-2' />
             </Col>
             <Col className='justify-content-center d-none d-sm-flex'>
-              <img src={country.payIn ? tick : cross} alt="" className='w-50 p-xxl-1' />
+              <img src={country.deposit ? tick : cross} alt="" className='w-50 p-xxl-1' />
             </Col>
             <Col className='justify-content-center d-none d-md-flex'>
-              <img src={country.payOut ? tick : cross} alt="" className='w-50' />
+              <img src={country.internalTransfer ? tick : cross} alt="" className='w-50' />
             </Col>
             <Col className='d-flex justify-content-center'>
               <img src={country.bankWithdraw ? tick : cross} alt="" className='w-50' />
@@ -132,7 +132,7 @@ const PayoutDetails = () => {
           )}
           <Row className='mx-0 justify-content-center pt-5 pb-4'>
             <Col className='d-flex justify-content-center steel-pink-to-grape-background col-auto rounded-5 text-decoration-none transition-1'
-              as={Link}>
+              as={Link} to='/business#business-payout'>
               <Row className='m-0 bg-white rounded-5 px-sm-4 px-5 py-1 text-black'>
 
                 Learn more

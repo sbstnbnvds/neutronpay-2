@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 
-import backgroundImage from '../../../assets/images/business/engineered-for-developers.png'
+import backgroundImage from '../../../assets/images/business/engineered-for-developers.svg'
 import listTick from '../../../assets/images/business/list-tick.svg'
 
 
@@ -13,8 +13,8 @@ const EngineeredForDevelopers = () => {
   return (
     <section className='engineered-for-developers'>
       <Container>
-        <Row className='px-5 mx-0 py-5 justify-content-center align-items-center flex-row-reverse gy-5'>
-          <Col lg={6} className='px-3 d-flex flex-column'>
+        <Row className='px-sm-5 mx-0 py-5 justify-content-center align-items-center flex-row-reverse gy-5'>
+          <Col lg={6} xxl={7} className='px-3 d-flex flex-column'>
             <h2 className='grape-text text-capitalize fw-semibold display-5 mb-3 text-center'>Engineered for developers</h2>
 
             <ul className='fs-4 fw-normal ps-0'>
@@ -38,12 +38,12 @@ const EngineeredForDevelopers = () => {
 
               </li>
             </ul>
-            <a href="#" className='align-self-center'>
-              <Button className='text-capitalize rounded-5 grape-background border-0 transition-1'>Contact our API documents</Button>
+            <a href="https://docs.neutronpay.com/?version=latest" target='__blank' className='align-self-center'>
+              <Button className='text-capitalize rounded-5 grape-background border-0 transition-1 text-capitalize'>API docs</Button>
             </a>
           </Col>
-          <Col lg={6}>
-            <img src={backgroundImage} className='w-100 rounded-5' alt="" />
+          <Col lg={6} xxl={5}>
+            <img src={backgroundImage} className='w-100' alt="" />
           </Col>
         </Row>
       </Container>

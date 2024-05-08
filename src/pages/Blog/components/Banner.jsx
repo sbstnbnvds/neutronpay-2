@@ -6,30 +6,14 @@ import Container from 'react-bootstrap/Container'
 
 import dottedTop from '../../../assets/images/dotted-top.svg'
 import dottedBottom from '../../../assets/images/dotted-bottom.svg'
-
-import mainImage from '../../../assets/images/blog/main-blog.png'
-import placeholderImage from '../../../assets/images/blog/blog-placeholder.png'
-
-const Banner = () => {
+import { Link } from 'react-router-dom'
 
 
-  const secondaryBlogs = [
-    {
-      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      cutline: "Lorem ipsum",
-      image: placeholderImage,
-    },
-    {
-      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      cutline: "Lorem ipsum",
-      image: placeholderImage,
-    },
-    {
-      header: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      cutline: "Lorem ipsum",
-      image: placeholderImage,
-    },
-  ]
+
+const Banner = ({ mainBlog1, secondaryBlogs1 }) => {
+  const mainBlog = mainBlog1
+  const secondaryBlogs = secondaryBlogs1
+
 
 
 
@@ -39,27 +23,31 @@ const Banner = () => {
       <Container className='position-relative z-3 mb-5'>
         <Row className='mx-0 mt-5 align-items-center'>
 
-          <Col lg={6} xs={12} className='px-5'>
+          <Col lg={6} xs={12} className='px-sm-5'>
             <div className="main-blog-pic w-100">
-              <img src={mainImage} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
+              <img src={mainBlog.image} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
             </div>
 
-            <h3 className='steel-pink-text fs-4 fw-medium py-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            <p className='fs-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quod ea sint adipisci at, tempore enim excepturi dolorum optio, quos debitis quam laudantium numquam. Labore, quidem. Perspiciatis sint libero magni!</p>
+            <Link className='text-decoration-none' to={`${mainBlog.index}`}>
+              <h3 className='steel-pink-text fs-4 fw-medium py-3 transition-1'>{mainBlog.title}</h3>
+            </Link>
+            <p className='fs-6'>{mainBlog.text[0]}</p>
 
           </Col>
           <Col lg={6} xs={12} className='px-5'>
-            {secondaryBlogs.map((blog, index) => <Row 
-            key={index} 
-            className={'mx-0 align-items-center py-4 position-relative ' + (index == 1 ? 'middle-row' : '')}>
+            {secondaryBlogs.map((blog, index) => <Row
+              key={index}
+              className={'mx-0 align-items-center py-4 position-relative ' + (index == 1 ? 'middle-row' : '')}>
               <Col sm={5} xs={12}>
                 <div className="secondary-blog-pic w-100">
                   <img src={blog.image} alt="" className='w-100 h-100 rounded-4  object-fit-cover' />
                 </div>
               </Col>
               <Col sm={7} xs={12} className='my-2'>
-                <small className='fs-6 text-white-50'>{blog.cutline}</small>
-                <h3 className='fs-4 fw-normal py-1 m-0'>{blog.header}</h3>
+                <small className='fs-6 text-white-50'>Neutronpay</small>
+                <Link className='text-decoration-none' to={`${blog.index}`}>
+                  <h3 className='fs-4 fw-normal py-1 m-0 text-white transition-1'>{blog.title}</h3>
+                </Link>
               </Col>
             </Row>)}
           </Col>

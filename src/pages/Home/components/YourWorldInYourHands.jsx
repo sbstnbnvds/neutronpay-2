@@ -17,15 +17,14 @@ const YourWorldInYourHands = () => {
 
 
         <h2 className='text-center fw-800 display-3 position-relative z-2 mb-1'>Your World in Your Hand</h2>
-        {/* <p className='text-center fs-1 fw-800 grape-text position-relative z-2'>We're available in Canada, Vietnam and Thailand... for now!</p> */}
         <Row className='m-0 gy-4 justify-content-around align-items-center position-relative z-2 flow-row-reverse'>
           
           <Col md={6} xs={12}>
             <Row className='mx-0 align-items-center justify-content-between'>
-              <Col xs={5} onClick={() => console.log('click test')}>
+              <Col xs={5} href='https://apps.apple.com/vn/app/neutronpay/id1629825080' target='_blank' as='a'>
                 <img className='w-100' src={Apple} alt="Download on the App Store" />
               </Col>
-              <Col xs={6}>
+              <Col xs={6} href='https://play.google.com/store/apps/details?id=neutronpay.wallet' target='_blank' as='a'>
                 <img className='w-100' src={Google} alt="Get it on Google Play" />
               </Col>
             </Row>

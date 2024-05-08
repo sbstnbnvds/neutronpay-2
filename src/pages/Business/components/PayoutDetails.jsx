@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -7,78 +7,78 @@ import Col from 'react-bootstrap/Col'
 import { VietnamFlag, PhilippinesFlag, ThailandFlag, IndonesiaFlag, MalaysiaFlag, CambodiaFlag, SingaporeFlag, SouthKoreaFlag, IndiaFlag } from '../../../components/Tools'
 const asianCountries = [
   {
-  "country": "vietnam",
-  "image": VietnamFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-}, {
-  "country": "philippines",
-  "image": PhilippinesFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": false,
-  "mobileWithdraw": true,
-}, {
-  "country": "thailand",
-  "image": ThailandFlag,
-  "massPayouts": true,
-  "payIn": true,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-}, {
-  "country": "indonesia",
-  "image": IndonesiaFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-}, {
-  "country": "malaysia",
-  "image": MalaysiaFlag,
-  "massPayouts": true,
-  "payIn": true,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-}, {
-  "country": "cambodia",
-  "image": CambodiaFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-},  {
-  "country": "singapore",
-  "image": SingaporeFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": false,
-  "mobileWithdraw": true,
-}, {
-  "country": "korea",
-  "image": SouthKoreaFlag,
-  "massPayouts": true,
-  "payIn": true,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-}, {
-  "country": "india",
-  "image": IndiaFlag,
-  "massPayouts": true,
-  "payIn": false,
-  "payOut": false,
-  "bankWithdraw": true,
-  "mobileWithdraw": true,
-},
+    "country": "vietnam",
+    "image": VietnamFlag,
+    "massPayouts": true,
+    "deposit": true,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "philippines",
+    "image": PhilippinesFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": false,
+    "mobileWithdraw": true,
+  }, {
+    "country": "thailand",
+    "image": ThailandFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "indonesia",
+    "image": IndonesiaFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "malaysia",
+    "image": MalaysiaFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "cambodia",
+    "image": CambodiaFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "singapore",
+    "image": SingaporeFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": false,
+    "mobileWithdraw": true,
+  }, {
+    "country": "korea",
+    "image": SouthKoreaFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  }, {
+    "country": "india",
+    "image": IndiaFlag,
+    "massPayouts": true,
+    "deposit": false,
+    "internalTransfer": true,
+    "bankWithdraw": true,
+    "mobileWithdraw": true,
+  },
 ]
 import { CanadaFlag } from '../../../components/Tools'
 const americanCountries = [
@@ -86,8 +86,8 @@ const americanCountries = [
     "country": "canada",
     "image": CanadaFlag,
     "massPayouts": true,
-    "payIn": true,
-    "payOut": false,
+    "deposit": true,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   },
@@ -98,56 +98,56 @@ const africanCountries = [
     "country": "kenya",
     "image": KenyaFlag,
     "massPayouts": true,
-    "payIn": false,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "ghana",
     "image": GhanaFlag,
     "massPayouts": true,
-    "payIn": true,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "rwanda",
     "image": RwandaFlag,
     "massPayouts": true,
-    "payIn": false,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "togo",
     "image": TogoFlag,
     "massPayouts": true,
-    "payIn": false,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": false,
     "mobileWithdraw": true,
   }, {
     "country": "senegal",
     "image": SenegalFlag,
     "massPayouts": true,
-    "payIn": true,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "côte d'ivoire",
     "image": IvoryCoastFlag,
     "massPayouts": true,
-    "payIn": false,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "benin",
     "image": BeninFlag,
     "massPayouts": true,
-    "payIn": true,
-    "payOut": false,
+    "deposit": false,
+    "internalTransfer": true,
     "bankWithdraw": true,
     "mobileWithdraw": true,
   }
@@ -176,43 +176,62 @@ const continentList = [
 ]
 
 const PayoutDetails = () => {
+
+  const [activeContinents, setActiveContinents] = useState(["africa"])
+
+  const handleClick = (continent) => {
+    if (activeContinents.includes(continent)) {
+      setActiveContinents(
+        activeContinents.filter(a => a !== continent)
+      );
+      console.log(activeContinents);
+    } else {
+      setActiveContinents([...activeContinents, continent]);
+    }
+  }
+
+
   return (
-    <section className='business-payout-details py-5'>
+    <section className='business-payout-details py-5' id='business-payout'>
       <h2 className='text-center text-capitalize grape-text display-3 fw-semibold mb-4'>Payout details</h2>
       <Container>
         {continentList.map((continent, index) => <>
-          <Row className='mx-0 pt-2 fs-1 border-bottom border-3 text-center text-capitalize justify-content-center position-relative user-select-none cursor-pointer'>
+          <Row
+            className='mx-0 pt-2 fs-1 border-bottom border-3 text-center text-capitalize justify-content-center position-relative user-select-none cursor-pointer'
+            key={index}
+            onClick={() => handleClick(continent.continent)}
+          >
             {continent.continent}
             <Col
               xs={1}
               className='position-absolute end-0'>
-              <img src={drowpdownArrow} alt="" className='' />
+              <img src={drowpdownArrow} alt="" className={(activeContinents.includes(continent.continent)) ? 'arrow-turned' : 'arrow-down'} />
             </Col>
           </Row>
-          <Row className='m-0 p-0 pe-md-3 pe-lg-0 pb-3 pt-2 align-items-center'>
+          <Row key={'table-head ' + index} className={'m-0 p-0 pe-md-3 pe-lg-0 pb-3 pt-2 align-items-center animate__animated ' + ((activeContinents.includes(continent.continent)) ? 'animate__fadeInDown' : 'd-none')}>
             <Col
               xxl={3}
               lg={4}
               sm={3}
               xs={4}
               className='payout-first-column'></Col>
-            <Col className='text-center fs-5'>
+            <Col className='text-center fs-5 text-capitalize'>
               Bitcoin mass payouts
             </Col>
-            <Col className='text-center d-none d-sm-block fs-5'>
-              Pay-in
+            <Col className='text-center d-none d-sm-block fs-5 text-capitalize'>
+              Deposit
             </Col>
-            <Col className='text-center d-none d-md-block fs-5'>
-              Pay-out
+            <Col className='text-center d-none d-md-block fs-5 text-capitalize'>
+              Internal transfer
             </Col>
-            <Col className='text-center fs-5'>
+            <Col className='text-center fs-5 text-capitalize'>
               Bank withdraw
             </Col>
-            <Col className='text-center d-none d-sm-block fs-5 p-sm-1'>
+            <Col className='text-center d-none d-sm-block fs-5 p-sm-1 text-capitalize'>
               Mobile money withdraw
             </Col>
           </Row>
-          {continent.countries.map((country, index) => <Row className='mx-0 p-0 pe-md-3 pe-lg-0 pb-2 pb-sm-3 pb-md-4 align-items-center' key={index}>
+          {continent.countries.map((country, index) => <Row className={'mx-0 p-0 pe-md-3 pe-lg-0 pb-2 pb-sm-3 pb-md-4 align-items-center animate__animated ' + ((activeContinents.includes(continent.continent)) ? 'animate__fadeInDown' : 'd-none')} key={'country ' + index}>
             <Col
               xxl={3}
               lg={4}
@@ -239,10 +258,10 @@ const PayoutDetails = () => {
               <img src={country.massPayouts ? roundedTick : cross} alt="" className='w-50 p-xxl-3 p-xl-2 p-lg-2 p-md-1 p-sm-1 p-2' />
             </Col>
             <Col className='justify-content-center d-none d-sm-flex'>
-              <img src={country.payIn ? tick : cross} alt="" className='w-50 p-xxl-1' />
+              <img src={country.deposit ? tick : cross} alt="" className='w-50 p-xxl-1' />
             </Col>
             <Col className='justify-content-center d-none d-md-flex'>
-              <img src={country.payOut ? tick : cross} alt="" className='w-50' />
+              <img src={country.internalTransfer ? tick : cross} alt="" className='w-50' />
             </Col>
             <Col className='d-flex justify-content-center'>
               <img src={country.bankWithdraw ? tick : cross} alt="" className='w-50' />

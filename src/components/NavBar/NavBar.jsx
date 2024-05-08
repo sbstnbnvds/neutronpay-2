@@ -19,6 +19,8 @@ const NavBar = () => {
 
   let location = useLocation();
 
+
+  const delay = ms => new Promise(res => setTimeout(res, ms));
   useEffect(() => {
     if (location.pathname == '/company'
       || location.pathname == '/blog') {
@@ -26,9 +28,21 @@ const NavBar = () => {
     } else {
       setDarkMode(false);
     }
-    window.scrollTo(0, 0);
+    async function testFunction() {
+      if (!location.hash) {
+  
+        window.scrollTo(0, 0);
+      } else {
+        await delay(300);
+        document.getElementById(location.hash.slice(1))?.scrollIntoView();
+      }
+
+    }
+
+    testFunction()
+
     console.log(location)
-    
+
     console.log("navbar location function")
   }, [location]);
 

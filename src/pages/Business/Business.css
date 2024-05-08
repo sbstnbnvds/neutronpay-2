@@ -1,3 +1,11 @@
+/* Banner */
+@supports (-webkit-appearance: none) {
+  #business-banner h1 {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 /* Pay-ins Pay-outs */
 
 .pay-ins-outs-section .card-bg-img {
@@ -40,7 +48,7 @@
 /* Payout Details */
 
 @media (max-width: 375px) {
-  .business-payout-details .payout-first-column{
+  .business-payout-details .payout-first-column {
     width: 27.5%;
 
   }
@@ -53,4 +61,13 @@
     display: inline !important;
   }
 
+}
+
+.business-payout-details .arrow-turned,
+.business-payout-details .arrow-down {
+  transition: transform 500ms ease-in-out;
+}
+
+.business-payout-details .arrow-turned {
+  transform: rotate(-0.5turn);
 }

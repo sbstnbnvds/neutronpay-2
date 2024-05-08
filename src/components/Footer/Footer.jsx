@@ -8,14 +8,32 @@ import { Link } from 'react-router-dom'
 
 import Logo from '../Logo'
 
+import facebookIcon from '../../assets/images/footer/facebook-icon.svg'
+import telegramIcon from '../../assets/images/footer/telegram-icon.svg'
+import discordIcon from '../../assets/images/footer/discord-icon.svg'
+import xIcon from '../../assets/images/footer/x-icon.svg'
+import linkedinIcon from '../../assets/images/footer/linkedin-icon.svg'
+import youtubeIcon from '../../assets/images/footer/youtube-icon.svg'
+import tiktokIcon from '../../assets/images/footer/tiktok-icon.svg'
+
 const tabsList = ["business", "app", "blog", "company"]
+
+const socialMedia = [
+  ["facebook", facebookIcon],
+  ["telegram", telegramIcon],
+  ["discord", discordIcon],
+  ["x", xIcon],
+  ["linked in", linkedinIcon],
+  ["youtube", youtubeIcon],
+  ["tik tok", tiktokIcon],
+]
 
 const Footer = () => {
   return (
     <section className='eerie-black-background text-light pt-3'>
       <Container>
 
-        <Row className='mx-0 mb-3 px-0 pt-3'>
+        <Row className='mx-0 mb-4 px-0 pt-3'>
           <Col xs={12} md={6} className='mb-3'>
             <Col as={Logo} fill='white'></Col>
             <Row className='mx-0 mt-3 mb-2'>
@@ -34,15 +52,26 @@ const Footer = () => {
             </Row>
           </Col>
           <Col xs={12} md={6}>
-            <Row className='mx-0'>
-              <Col xs={12} md={4} className='px-0 mb-4'>
+            <Row className='mx-0 align-items-start'>
+              <Col xs={12} md={4} xl={3} className='px-0 mb-4'>
                 <Row className='mx-0'>
-                  {tabsList.map( (tab, index ) => <Col as={Link} className='fs-4 text-decoration-none text-light px-0 mb-md-3 text-capitalize' xs={6} md={12} to={`/${tab}`} key={index}>{tab}</Col>)} 
+                  {tabsList.map((tab, index) => <Col as={Link} className='fs-4 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} to={`/${tab}`} key={index}>{tab}</Col>)}
+                  <Col as='a' className='fs-4 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} href='https://contact.neutronpay.com/' target='_blank'>Contact us</Col>
+                  <Col as='a' className='fs-4 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} href='https://docs.neutronpay.com/?version=latest' target='_blank'>Developer</Col>
                 </Row>
               </Col>
-              <Col xs={12} md={8} className='px-2 border border-white border-2 rounded-3 py-2 px-3'>
-                <p className='fs-4'>FAQs</p>
-                <p className='fs-4'>Ask us anything about our brand and product, and get factual responses.</p>
+              <Col xs={12} md={8} xl={9} className=''>
+                <div className='border border-white border-2 rounded-3 py-2 px-3'>
+
+                  <a className='fs-4 d-block pb-2 text-decoration-none text-light' href='https://support.neutronpay.com/' target='__blank'>FAQs</a>
+                  <p className='fs-4'>Ask us anything about our brand and product, and get factual responses.</p>
+                </div>
+                <Row className='mx-0 mt-0 gy-4'>
+                  {socialMedia.map((socialMedia, index) => <Col as='a' src={facebookIcon} className='px-2 px-sm-3 px-md-0 px-lg-1 px-xl-0 me-3 me-xl-3 transition-1' xs={2} sm={2} md={2} xl={1} key={index} >
+                    <img src={socialMedia[1]} className='w-100' alt={socialMedia[0]} />
+
+                  </Col>)}
+                </Row>
               </Col>
             </Row>
           </Col>
