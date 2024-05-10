@@ -33,7 +33,7 @@ const NavBar = () => {
   
         window.scrollTo(0, 0);
       } else {
-        await delay(300);
+        await delay(100);
         document.getElementById(location.hash.slice(1))?.scrollIntoView();
       }
 

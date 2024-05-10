@@ -27,7 +27,7 @@ const Benefits = () => {
                 </Row>
                 <Row className=''>
                   <h3 className='steel-pink-text text-capitalize mb-4'>send</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius aliquid nobis! Quisquam iusto aliquam dolores</p>
+                  <p>Quickly send money internationally. Use Bitcoin or your local currency to make secure & fast transactions to anyone, anywhere.</p>
                 </Row>
               </Col>
             </Row>
@@ -35,7 +35,7 @@ const Benefits = () => {
           <Col xl={4} lg={4} md={8} xs={12} className='px-sm-4 '>
             <Row className='h-100'>
               <Col xs={12} className='rounded-4 shadow benefits-card pt-5 px-4 pb-1 eerie-black-background text-white'>
-                <Row className='mb-2 justify-content-between align-items-center'>
+                <Row className='justify-content-between align-items-center'>
                   <Col xs={5} className='d-flex justify-content-start mb-5'>
                     <img className='benefits-card-icon' src={receiveIcon} alt="" />
                   </Col>
@@ -44,7 +44,7 @@ const Benefits = () => {
                   </Col>
                 </Row>
                 <Row className=''>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius aliquid nobis! Quisquam iusto aliquam dolores, nemo nisi libero asperiores</p>
+                  <p>Your business receives Bitcoin but it is instantly converted locally and ready to be withdrawn to a bank or mobile account</p>
                 </Row>
               </Col>
             </Row>
@@ -58,8 +58,8 @@ const Benefits = () => {
                   </Col>
                 </Row>
                 <Row>
-                  <h3 className='steel-pink-text text-capitalize'>low cost</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius aliquid nobis! Quisquam iusto aliquam dolores, nemo nisi libero asperiores</p>
+                  <h3 className='steel-pink-text text-capitalize mb-4'>low cost</h3>
+                  <p>Enjoy lower costs compared to traditional global payment methods thanks to our use of Bitcoin's instant and final settlement.</p>
                 </Row>
               </Col>
             </Row>

@@ -19,13 +19,13 @@ import tiktokIcon from '../../assets/images/footer/tiktok-icon.svg'
 const tabsList = ["business", "app", "blog", "company"]
 
 const socialMedia = [
-  ["facebook", facebookIcon],
-  ["telegram", telegramIcon],
-  ["discord", discordIcon],
-  ["x", xIcon],
-  ["linked in", linkedinIcon],
-  ["youtube", youtubeIcon],
-  ["tik tok", tiktokIcon],
+  ["facebook", facebookIcon, "https://www.facebook.com/Neutronpay/"],
+  // ["telegram", telegramIcon, ""],
+  // ["discord", discordIcon, ""],
+  ["x", xIcon, "https://twitter.com/neutronpay"],
+  ["linked in", linkedinIcon, "https://www.linkedin.com/company/neutronpay"],
+  ["youtube", youtubeIcon, "https://www.youtube.com/channel/UCVR0DWNMQxrnE8lxEwNBKMw"],
+  ["tik tok", tiktokIcon, "https://www.tiktok.com/@neutronpay"],
 ]
 
 const Footer = () => {
@@ -41,7 +41,7 @@ const Footer = () => {
               <p className='fs-5 mb-2'>Canada: 170-442 Richards St, Vancouver BC, V6b 2za</p>
               <p className='fs-5 mb-2'>Vietnam: 62 Tran Quang Khai Street, Tan Dinh Ward, District 1, HCMC</p>
             </Row>
-            <Row className='mx-0'>
+            {/* <Row className='mx-0'>
               <Col className='d-flex justify-content-center steel-pink-background col-auto rounded-5 text-decoration-none transition-1'
                 as={Link}>
                 <Row className='m-0 rounded-5 px-4 py-2 px-sm-4 py-1 text-white fs-5'>
@@ -49,7 +49,7 @@ const Footer = () => {
                   Login
                 </Row>
               </Col>
-            </Row>
+            </Row> */}
           </Col>
           <Col xs={12} md={6}>
             <Row className='mx-0 align-items-start'>
@@ -67,7 +67,7 @@ const Footer = () => {
                   <p className='fs-4'>Ask us anything about our brand and product, and get factual responses.</p>
                 </div>
                 <Row className='mx-0 mt-0 gy-4'>
-                  {socialMedia.map((socialMedia, index) => <Col as='a' src={facebookIcon} className='px-2 px-sm-3 px-md-0 px-lg-1 px-xl-0 me-3 me-xl-3 transition-1' xs={2} sm={2} md={2} xl={1} key={index} >
+                  {socialMedia.map((socialMedia, index) => <Col as='a' className='px-2 px-sm-3 px-md-0 px-lg-1 px-xl-0 me-3 me-xl-3 transition-1' xs={2} sm={2} md={2} xl={1} key={index} href={socialMedia[2]} target='_blank'>
                     <img src={socialMedia[1]} className='w-100' alt={socialMedia[0]} />
 
                   </Col>)}
@@ -77,9 +77,9 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className='gy-4'>
-          <Col xs={12} md={6} className='d-flex justify-content-between justify-content-md-evenly'>
-            <Link className='text-decoration-none text-light fs-4'>Privacy Policy</Link>
-            <Link className='text-decoration-none text-light fs-4'>Terms of service</Link>
+          <Col xs={12} md={6} className='d-flex justify-content-between justify-content-md-start'>
+            <Link className='text-decoration-none text-light fs-4 me-md-3 me-lg-5' to='/privacy-policy'>Privacy Policy</Link>
+            <Link className='text-decoration-none text-light fs-4' to={'/terms-of-use'}>Terms of Use</Link>
           </Col>
           <Col xs={12} md={6} className='d-flex '>
             <p className='fs-4'>&#169; 2024 Neutronpay. All rights reserved.</p>

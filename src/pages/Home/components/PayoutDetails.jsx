@@ -60,6 +60,8 @@ const PayoutDetails = () => {
       "mobileWithdraw": true,
     },
   ]
+
+
   return (
     <section className='payout-details-home-section py-5'>
       <Container>
@@ -130,12 +132,17 @@ const PayoutDetails = () => {
             </Col>
           </Row>
           )}
-          <Row className='mx-0 justify-content-center pt-5 pb-4'>
-            <Col className='d-flex justify-content-center steel-pink-to-grape-background col-auto rounded-5 text-decoration-none transition-1'
+          <Row className='mx-0 justify-content-center pt-1 pb-4 gy-3'>
+            <Col className='d-flex justify-content-center mx-4 steel-pink-to-grape-background col-auto rounded-5 text-decoration-none transition-1'
               as={Link} to='/business#business-payout'>
               <Row className='m-0 bg-white rounded-5 px-sm-4 px-5 py-1 text-black'>
-
-                Learn more
+                For Businesses
+              </Row>
+            </Col>
+            <Col className='d-flex justify-content-center mx-4 steel-pink-to-grape-background col-auto rounded-5 text-decoration-none transition-1'
+              as={Link} to='/app#available-now'>
+              <Row className='m-0 bg-white rounded-5 px-sm-4 px-5 py-1 text-black'>
+                For the App
               </Row>
             </Col>
           </Row>

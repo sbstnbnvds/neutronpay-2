@@ -20,7 +20,7 @@ const asianCountries = [
     "massPayouts": true,
     "deposit": false,
     "internalTransfer": true,
-    "bankWithdraw": false,
+    "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "thailand",
@@ -60,7 +60,7 @@ const asianCountries = [
     "massPayouts": true,
     "deposit": false,
     "internalTransfer": true,
-    "bankWithdraw": false,
+    "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "korea",
@@ -91,7 +91,7 @@ const americanCountries = [
     "bankWithdraw": true,
     "mobileWithdraw": true,
   },
-]
+] 
 import { KenyaFlag, GhanaFlag, RwandaFlag, TogoFlag, SenegalFlag, IvoryCoastFlag, BeninFlag } from '../../../components/Tools'
 const africanCountries = [
   {
@@ -124,7 +124,7 @@ const africanCountries = [
     "massPayouts": true,
     "deposit": false,
     "internalTransfer": true,
-    "bankWithdraw": false,
+    "bankWithdraw": true,
     "mobileWithdraw": true,
   }, {
     "country": "senegal",
@@ -193,7 +193,7 @@ const PayoutDetails = () => {
 
   return (
     <section className='business-payout-details py-5' id='business-payout'>
-      <h2 className='text-center text-capitalize grape-text display-3 fw-semibold mb-4'>Payout details</h2>
+      <h2 className='text-center text-capitalize grape-text display-3 fw-semibold mb-4'>Business payout details</h2>
       <Container>
         {continentList.map((continent, index) => <>
           <Row

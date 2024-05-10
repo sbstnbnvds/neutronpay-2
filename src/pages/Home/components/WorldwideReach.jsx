@@ -33,12 +33,9 @@ const WorldwideReach = () => {
                   className='p-0 d-flex align-items-center my-sm-5'>
                   <Row className='m-0 bg-white shadow rounded-4 px-2 py-2 w-100 justify-content-end'>
                     <Col
-                      sm={9}
-                      md={10}
-                      lg={9}
-                      xxl={8}>
-                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Lorem</p>
-                      <p className='p-0 m-0'>Lorem ipsum dolor sit amet.</p>
+                      sm={12}>
+                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Jordan:</p>
+                      <p className='p-0 m-0'>Hey Pat, I paid for the project in Bitcoin since it's surging. You should see it soon!</p>
                       <p className='text-end m-0 p-0 steel-pink-text fw-semibold lh-1'>$43.2</p>
                     </Col>
                   </Row>
@@ -48,16 +45,13 @@ const WorldwideReach = () => {
                   md={6}
                   lg={5}
                   xl={4}
-                  className='p-0 d-flex align-items-center my-sm-5 d-none d-lg-block'>
+                  className='p-0 d-none d-lg-block align-items-center my-sm-5 '>
                   <Row className='m-0 bg-white shadow rounded-4 px-2 py-2 w-100'>
                     <Col
-                      sm={9}
-                      md={10}
-                      lg={9}
-                      xxl={8}>
-                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Lorem</p>
-                      <p className='p-0 m-0'>Lorem ipsum dolor sit amet.</p>
-                      <p className='text-end m-0 p-0 fw-800 lh-1'><img src={bitcoinB} alt="" className='bitcoin-sign' />43.2</p>
+                      sm={12}>
+                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Pat:</p>
+                      <p className='p-0 m-0'>Got it! the app changed it to Dong instantly. Love how this works! &#128513;</p>
+                      <p className='text-end m-0 p-0 fw-800 lh-1'><img src={bitcoinB} alt="" className='bitcoin-sign' /></p>
                     </Col>
 
                   </Row>
@@ -67,15 +61,16 @@ const WorldwideReach = () => {
                   md={6}
                   lg={5}
                   xl={4}
-                  className='p-0  align-items-center my-sm-5'>
+                  className='p-0 d-none d-xl-block align-items-center my-sm-5'>
                   <Row className='m-0 bg-white shadow rounded-4 px-2 py-2 w-100 align-items-center justify-content-between'>
                     <Col
                       sm={9}
                       md={10}
                       lg={9}
-                      xxl={8}>
-                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Lorem</p>
-                      <p className='p-0 m-0'>Lorem ipsum dolor sit amet.</p>
+                      xl={10}
+                      xxl={10}>
+                      <p className='m-0 p-0 text-secondary lh-1 message-sup-text'>Jordan:</p>
+                      <p className='p-0 m-0'>Makes collaboration smoother! &#128517;</p>
                       <p className='text-end m-0 p-0 grape-text fw-800 lh-1'>$43.2</p>
                     </Col>
                     <Col xs={2}

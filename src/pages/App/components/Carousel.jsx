@@ -138,8 +138,8 @@ const AppCarousel = () => {
                   className='mx-auto mx-lg-0 border border-5 rounded-4 border-black px-xl-3 pt-xl-1 pb-xl-0 me-lg-5 me-xl-0 grape-background position-relative carousel-card'>
                   <Row className='mx-0'>
                     <Col xl={11} lg={11} md={10} sm={11}>
-                      <h4 className='border-bottom border-black border-3 me-4 me-sm-5 me-md-0 mt-4 mt-sm-3 mt-md-3 mt-lg-0 pb-1'>Merchants Retailers with Neutronpay POS Mode</h4>
-                      <p className='lh-sm'>Wheter you're catering to local customers or accepting various global currencies, Neutronpay POS Mode simplifies transactions for a seamless retail experience.</p>
+                      <h4 className='border-bottom border-black border-3 me-4 me-sm-5 me-md-0 mt-4 mt-sm-3 mt-md-3 mt-lg-0 pb-1'>Point of Sale</h4>
+                      <p className='lh-sm'>Neutronpay's PoS feature enables small businesses to accept Bitcoin payments on various devices, instantly converting them to local currency. Simplify transactions and embrace digital payments effortlessly with Neutronpay.</p>
                     </Col>
 
                   </Row>
@@ -160,7 +160,7 @@ const AppCarousel = () => {
                   className='border border-5 rounded-4 border-black px-xl-3 py-md-1 py-lg-0 py-xl-1 pb-xl-4 grape-background position-relative carousel-card'>
                   <Row className='mx-0'>
                     <Col xl={12} md={11}>
-                      <h4 className='border-bottom border-black border-3 pb-1 pt-lg-4 pt-xl-3 me-lg-4 mt-3 mt-sm-4 mt-md-3 mt-lg-0'>Streamers & Content Creators</h4>
+                      <h4 className='border-bottom border-black border-3 pb-1 pt-lg-4 pt-xl-3 me-lg-4 mt-3 mt-sm-4 mt-md-3 mt-lg-0'>Streamers & Creators</h4>
                       <p className='lh-sm pe-lg-4'>Embrace LNURL for a hassle-free payment process. Connect with your global audience and receive payments effortlessly. Our platform removes the complexity typically associated with traditional platforms.</p>
                     </Col>
                   </Row>

@@ -60,7 +60,7 @@ const EnabledCountries = () => {
   return (
     <section className='enabled-countries-section eerie-black-background pt-4'>
       <Container>
-        <Row className='mx-0 justify-content-center text-white align-items-center gy-5 position-relative z-3'>
+        <Row className='mx-0 mb-4 justify-content-center text-white align-items-center gy-5 position-relative z-3'>
           <Col lg={6} className='text-center px-1 d-flex flex-column align-items-center'>
             <h2 className='text-capitalize display-4 fw-semibold'>Enabled pay-out countries</h2>
             <p className='fs-5 fw-light'>With support for over 20+ different currencies, you'll be able to easily exchange, and transfer money instantly.</p>
@@ -82,13 +82,13 @@ const EnabledCountries = () => {
                 console.log(tab[0] + " onMouseOver")
                 setHoveredTab(tab[0]);
               }}>
-              <Row className='text-center'>
+              <Row className='text-center mb-2'>
                 <p className={'fs-4 p-0 m-0 user-select-none continent-p animate__animated ' + (tab[0] == hoveredTab ? 'animate__pulse' : '')}>
                   {tab[0]}
                 </p>
               </Row>
               <Row className={'flags-wrapper text-center justify-content-center px-lg-5 pb-2 pb-lg-3 pb-xl-2 animate__animated ' + 
-              (tab[0] == hoveredTab ? 'animate__flipInX' : 'animate__flipOutX')}>
+              (tab[0] == hoveredTab ? 'animate__fadeInDown' : 'd-none')}>
                 {tab[1].map((country, index) => <Row
                   key={country}
                   className='flag-wrapper px-1 px-sm-2 px-md-2 px-lg-1 px-xl-2 mx-0'>
