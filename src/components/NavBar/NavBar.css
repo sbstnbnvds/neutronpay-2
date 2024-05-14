@@ -23,8 +23,10 @@
   -webkit-backdrop-filter: blur(3.8px);
 }
 
-#navbar.glassmorphism.navbar-dark {
-  background: rgba(var(--eerie-black-rgb), 0.86)
+#navbar.glassmorphism.dark-mode-nav,
+#navbar.dark-mode-nav:has(.collapse.show),
+#navbar.dark-mode-nav:has(.collapsing)  {
+  background: rgba(var(--eerie-black-rgb), 0.86) !important;
 }
 
 
