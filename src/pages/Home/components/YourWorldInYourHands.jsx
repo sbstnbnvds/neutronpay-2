@@ -12,14 +12,14 @@ import dottedBackground from '../../../assets/images/home/worldinhands-map.svg'
 
 const YourWorldInYourHands = () => {
   return (
-    <section className='world-in-hands-section pt-5'>
+    <section className='world-in-hands-section pt-3'>
       <Container>
 
 
         <h2 className='text-center fw-800 display-3 position-relative z-2 mb-1'>Your World in Your Hand</h2>
         <Row className='m-0 gy-4 justify-content-around align-items-center position-relative z-2 flow-row-reverse'>
           
-          <Col md={6} xs={12}>
+          <Col md={5} sm={9} xs={11}>
             <Row className='mx-0 align-items-center justify-content-between'>
               <Col xs={5} href='https://apps.apple.com/vn/app/neutronpay/id1629825080' target='_blank' as='a'>
                 <img className='w-100' src={Apple} alt="Download on the App Store" />
@@ -29,12 +29,12 @@ const YourWorldInYourHands = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={5} xs={8} className=''>
-            <img className='w-100 px-1' src={Phone} alt="" />
+          <Col xl={3} md={4} sm={6} xs={7} className='mt-sm-5'>
+            <img className='w-100 ' src={Phone} alt="" />
           </Col>
         </Row>
-        <Row className="w-100 justify-content-center">
-          <Col xs={12} className='position-relative justify-content-start justify-content-md-center d-flex'>
+        <Row className="mx-0 justify-content-center">
+          <Col xl={9} xs={12} className='position-relative justify-content-start justify-content-md-center d-flex'>
             <img src={dottedBackground} className='w-50 position-absolute world-hands-map opacity-25' alt="" />
           </Col>
         </Row>

@@ -29,18 +29,18 @@ const AvailableNow = () => {
 
   return (
     <section className='app-available-now py-5' id='available-now'>
-      <Container>
+      <Container className='d-flex flex-column align-items-center'>
 
-        <h2 className='text-center text-capitalize grape-text display-2 fw-semibold'>Available now!</h2>
+        <h2 className='text-center text-capitalize grape-text display-2 fw-semibold grape-to-steel-pink-background gradient-text'>Available now!</h2>
         <Row className='m-0 justify-content-center justify-content-sm-evenly py-5 px-md-2'>
-          {flags.map((flag, index) => <Col lg={2} md={3} sm={4} xs={5} className='px-3 px-sm-1' key={index}>
-            <img src={flag[1]} alt="" className='w-100 flag-app mb-3 px-sm-3 px-xl-4' />
-            <p className='fs-4 text-center'>{flag[0]}</p>
+          {flags.map((flag, index) => <Col lg={1} md={2} sm={3} xs={4} className='px-sm-1 d-flex flex-column align-items-center mx-3 mx-sm-4' key={index}>
+            <img src={flag[1]} alt="" className='w-100 flag-app mb-3' />
+            <p className='fs-5 text-center'>{flag[0]}</p>
           </Col>)}
         </Row>
 
         <Row className='m-0 justify-content-center'>
-          <Col lg={7} sm={10} xs={8}>
+          <Col lg={6} sm={10} xs={8}>
             <Row className='mx-0 align-items-center ps-sm-5 gy-4'>
               <Col sm={5} href='https://apps.apple.com/vn/app/neutronpay/id1629825080' target='_blank' as='a'>
                 <img className='w-100 px-3 px-sm-0' src={Apple} alt="Download on the App Store" />

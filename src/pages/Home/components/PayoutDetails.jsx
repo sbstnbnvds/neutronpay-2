@@ -66,8 +66,8 @@ const PayoutDetails = () => {
     <section className='payout-details-home-section py-5'>
       <Container>
 
-        <Row className='w-100 m-0 rounded-5 py-4 px-2 shadow-sm shadow-lg'>
-          <h2 className='grape-text text-capitalize text-center fw-800 fs-1 pb-4'>payout details</h2>
+        <Row className='m-0 rounded-5 py-4 px-2 shadow-sm shadow-lg justify-content-center'>
+          <h2 className='grape-text text-capitalize fw-800 fs-1 grape-to-steel-pink-background gradient-text pb-4 mx-auto w-auto px-0'>payout details</h2>
 
           <Row className='m-0 p-0 pe-md-3 pe-lg-0 pb-3 align-items-center'>
             <Col

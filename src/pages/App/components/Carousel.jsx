@@ -56,7 +56,7 @@ const AppCarousel = () => {
   return (
     <section className='mb-5'>
       <Row className='mx-0 justify-content-center'>
-        <h2 className='text-capitalize w-auto display-3 fw-semibold grape-text mb-5'>Neutronpay Features</h2>
+        <h2 className='text-capitalize w-auto display-3 fw-semibold grape-text mb-5 grape-to-steel-pink-background gradient-text px-0'>Neutronpay Features</h2>
       </Row>
       <Container className='border border-4 border-black rounded-4 px-0 overflow-hidden'>
         <Carousel className='' indicators={false} interval={null} prevIcon={prevButton} nextIcon={nextButton}>

@@ -177,7 +177,7 @@ const continentList = [
 
 const PayoutDetails = () => {
 
-  const [activeContinents, setActiveContinents] = useState(["africa"])
+  const [activeContinents, setActiveContinents] = useState(["asia"])
 
   const handleClick = (continent) => {
     if (activeContinents.includes(continent)) {

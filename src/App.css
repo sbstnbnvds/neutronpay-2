@@ -44,6 +44,17 @@ body{
   .steel-pink-to-grape-background{
     background: -webkit-linear-gradient(200deg, var(--steel-pink-color) 25%, var(--grape-color) 125%) !important;
   }
+  .grape-to-steel-pink-background{
+    background: -webkit-linear-gradient(200deg, var(--grape-color) 25%, var(--steel-pink-color) 125%) !important;
+  }
+}
+
+/* Gradient text */
+@supports (-webkit-appearance: none) {
+  .gradient-text {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /* Button */

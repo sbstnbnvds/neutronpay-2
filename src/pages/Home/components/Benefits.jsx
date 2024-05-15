@@ -26,7 +26,7 @@ const Benefits = () => {
                   </Col>
                 </Row>
                 <Row className=''>
-                  <h3 className='steel-pink-text text-capitalize mb-4'>send</h3>
+                  <h3 className='steel-pink-text text-capitalize mb-4 steel-pink-to-grape-background gradient-text w-auto'>send</h3>
                   <p>Quickly send money internationally. Use Bitcoin or your local currency to make secure & fast transactions to anyone, anywhere.</p>
                 </Row>
               </Col>
@@ -58,7 +58,7 @@ const Benefits = () => {
                   </Col>
                 </Row>
                 <Row>
-                  <h3 className='steel-pink-text text-capitalize mb-4'>low cost</h3>
+                  <h3 className='steel-pink-text text-capitalize mb-4 steel-pink-to-grape-background gradient-text w-auto'>low cost</h3>
                   <p>Enjoy lower costs compared to traditional global payment methods thanks to our use of Bitcoin's instant and final settlement.</p>
                 </Row>
               </Col>

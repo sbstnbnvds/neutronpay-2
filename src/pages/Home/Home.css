@@ -55,17 +55,6 @@
   height: 2.5rem;
 }
 
-
-/* Lightning Network Advantage  */
-
-@supports (-webkit-appearance: none) {
-  .lightning-network-advantage h2 {
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
-
 /* Worldwide Reach */
 
 .worldwide-reach-section .text-box-1 p {

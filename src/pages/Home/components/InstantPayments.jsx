@@ -11,9 +11,9 @@ const InstantPayments = () => {
     <section className='instant-payments-section'>
       <Container>
         <Row className='mx-0 py-5 justify-content-center align-items-center'>
-          <Col lg={5} className='py-5'>
-            <h2 className='steel-pink-text text-capitalize fw-semibold display-5'>instant payments</h2>
-            <p className='fw-medium'>Imagine sending money as easily as sending a text. That's what we offer - instant transactions that keep your business agile and your personal payments fluid</p>
+          <Col lg={5} className='py-5 d-flex flex-column'>
+            <h2 className='steel-pink-text text-capitalize fw-semibold display-5 me-auto steel-pink-to-grape-background gradient-text'>instant payments</h2>
+            <p className='fw-normal'>Imagine sending money as easily as sending a text. That's what we offer - instant transactions that keep your business agile and your personal payments fluid</p>
           </Col>
           <Col lg={7}
           className='d-flex justify-content-center'>
