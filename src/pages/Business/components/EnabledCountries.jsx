@@ -53,7 +53,7 @@ const tabList = [
 
 const EnabledCountries = () => {
 
-  const [hoveredTab, setHoveredTab] = useState("Africa")
+  const [hoveredTab, setHoveredTab] = useState("Asia")
   Container
 
 

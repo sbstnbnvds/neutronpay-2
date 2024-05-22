@@ -35,9 +35,9 @@ const Blogs = ({ blogList }) => {
             <small className='text-secondary '>Neutronpay</small>
 
             <Link className='text-decoration-none' to={`${blog.index}`}>
-              <h3 className='grape-text transition-1'>{blog.title}</h3>
+              <h3 className='grape-text transition-1'>{blog.title.length > 60 ? (blog.title.substring(0, 60) + '...') : blog.title }</h3>
             </Link>
-            <p className='fs-6'>{blog.text[0]}</p>
+            {/* <p className='fs-6'>{blog.text[0]}</p> */}
           </Col>)}
         </Row>
 

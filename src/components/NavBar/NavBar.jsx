@@ -14,12 +14,11 @@ const NavBar = () => {
   const [background, setBackground] = useState('')
   const [hidden, setHidden] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   const tabsList = ["home", "business", "app", "blog", "company"]
 
   let location = useLocation();
-
-
   const delay = ms => new Promise(res => setTimeout(res, ms));
   useEffect(() => {
     if (location.pathname == '/company'
@@ -30,7 +29,7 @@ const NavBar = () => {
     }
     async function testFunction() {
       if (!location.hash) {
-  
+
         window.scrollTo(0, 0);
       } else {
         await delay(500);
@@ -80,17 +79,19 @@ const NavBar = () => {
   return (<>
     <Navbar
       expand='md'
+      expanded={expanded}
       id='navbar'
       className={(hidden ? 'fixed-top hidden' : 'fixed-top') + ' ' + background + ' ' + (darkMode ? 'navbar-dark dark-mode-nav' : '')}
     >
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/#">
           <Logo fill={darkMode ? "white" : "black"} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Toggle aria-controls='basic-navbar-nav' onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse className='align-items-stretch flex-column'>
           <Nav className='justify-content-around' id='basic-navbar-nav'>
             {tabsList.map((tab, index) => <NavLink
+              onClick={() => setExpanded(false)}
               key={index}
               role="button"
               data-rr-ui-event-key="#"

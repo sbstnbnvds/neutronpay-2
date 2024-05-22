@@ -15,7 +15,7 @@ const APIForEAndB = () => {
 
         <h2 className='display-5 text-uppercase fw-800 text-center z-3 position-relative steel-pink-text'>API for Enterprises and Businesses</h2>
         <Row className='mx-0 pt-4 mb-0 justify-content-evenly z-3 position-relative'>
-          <p className='text-white text-center fs-6'>Neutronpay API is a powerful gateway designed for enterprises and businesses seeking to integrate lightning-fast payment solutions into their existing systems. Our API is engineered to provide a seamless, secure, and scalable payment experience, tailored to meet the diverse needs of today's businesses.</p>
+          <p className='text-white text-center fs-6'>The Neutronpay API enables enterprises and businesses to integrate fast payment processing seamlessly and securely. Built for scalability.</p>
         </Row>
         <Row className='mx-0 pt-1 pb-5 justify-content-evenly z-3 position-relative'>
           <Col xs={9} className='text-white text-center px-5 fs-4 d-flex justify-content-center'>

@@ -57,15 +57,15 @@ const Footer = () => {
             <Row className='mx-0 align-items-start'>
               <Col xs={12} md={4} xl={3} className='px-0 mb-4'>
                 <Row className='mx-0'>
-                  {tabsList.map((tab, index) => <Col as={Link} className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} to={`/${tab}`} key={index}>{tab}</Col>)}
-                  <Col as='a' className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} href='https://contact.neutronpay.com/' target='_blank'>Contact us</Col>
-                  <Col as='a' className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize' xs={6} md={12} href='https://docs.neutronpay.com/?version=latest' target='_blank'>Developer</Col>
+                  {tabsList.map((tab, index) => <Col as={Link} className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize transition-1' xs={6} md={12} to={`/${tab}`} key={index}>{tab}</Col>)}
+                  <Col as='a' className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize transition-1' xs={6} md={12} href='https://contact.neutronpay.com/' target='_blank'>Contact us</Col>
+                  <Col as='a' className='fs-6 text-decoration-none text-light px-0 mb-md-3 mb-xl-2 text-capitalize transition-1' xs={6} md={12} href='https://docs.neutronpay.com/?version=latest' target='_blank'>Developer</Col>
                 </Row>
               </Col>
               <Col xs={12} md={8} xl={9} className=''>
-                <div className='border border-white border-2 rounded-3 py-2 px-3'>
+                <div className='border border-white border-2 rounded-3 py-2 px-3 d-flex flex-column'>
 
-                  <a className='fs-5 d-block pb-2 text-decoration-none text-light' href='https://support.neutronpay.com/' target='__blank'>FAQs</a>
+                  <a className='fs-5 d-block pb-2 text-decoration-none text-light me-auto transition-1' href='https://support.neutronpay.com/' target='__blank'>FAQs</a>
                   <p className='fs-6'>Ask us anything about our brand and product, and get factual responses.</p>
                 </div>
                 <Row className='mx-0 mt-0 gy-4'>
@@ -80,8 +80,8 @@ const Footer = () => {
         </Row>
         <Row className='gy-4'>
           <Col xs={12} md={6} className='d-flex justify-content-between justify-content-md-start fs-6'>
-            <Link className='text-decoration-none text-light me-md-3 me-lg-5' to='/privacy-policy'>Privacy Policy</Link>
-            <Link className='text-decoration-none text-light' to={'/terms-of-use'}>Terms of Use</Link>
+            <Link className='text-decoration-none text-light me-md-3 me-lg-5 transition-1' to='/privacy-policy'>Privacy Policy</Link>
+            <Link className='text-decoration-none text-light transition-1' to={'/terms-of-use'}>Terms of Use</Link>
           </Col>
           <Col xs={12} md={6} className='d-flex '>
             <p className='fs-6'>&#169; 2024 Neutronpay. All rights reserved.</p>

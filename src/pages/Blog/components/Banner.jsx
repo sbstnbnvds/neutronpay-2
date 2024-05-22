@@ -29,7 +29,7 @@ const Banner = ({ mainBlog1, secondaryBlogs1 }) => {
             </div>
 
             <Link className='text-decoration-none' to={`${mainBlog.index}`}>
-              <h3 className='steel-pink-text fs-4 fw-medium py-3 transition-1'>{mainBlog.title}</h3>
+              <h3 className='steel-pink-text fs-4 fw-medium py-3 transition-1'>{mainBlog.title.length > 70 ? (mainBlog.title.substring(0, 70) + '...') : mainBlog.title}</h3>
             </Link>
             <p className='fs-6'>{mainBlog.text[0]}</p>
 
@@ -46,7 +46,7 @@ const Banner = ({ mainBlog1, secondaryBlogs1 }) => {
               <Col sm={7} xs={12} className='my-2'>
                 <small className='fs-6 text-white-50'>Neutronpay</small>
                 <Link className='text-decoration-none' to={`${blog.index}`}>
-                  <h3 className='fs-4 fw-normal py-1 m-0 text-white transition-1'>{blog.title}</h3>
+                  <h3 className='fs-4 fw-normal py-1 m-0 text-white transition-1'>{blog.title.length > 60 ? (blog.title.substring(0, 60) + '...') : blog.title}</h3>
                 </Link>
               </Col>
             </Row>)}

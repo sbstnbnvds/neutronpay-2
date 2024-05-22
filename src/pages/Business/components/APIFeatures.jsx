@@ -23,7 +23,7 @@ const APIFeatures = () => {
                 <img src={Feature1} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
-                <p className='fs-5'>Forget the complexities traditionally associated with international payments. Neutronpay API makes global transactions as straightforward as local ones.</p>
+                <p className='fs-5'>Simplify global transactions with Neutronpay API—just as easy as local payments.</p>
               </Col>
             </Col>
           </Col>
@@ -33,7 +33,7 @@ const APIFeatures = () => {
                 <img src={Feature2} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
-                <p className='fs-5'>Neutronpay API bridges the gap between your business and these rapidly growing economies, offering unparalleled access and convenience.</p>
+                <p className='fs-5'>Neutronpay API connects your business to growing economies with ease.</p>
               </Col>
             </Col>
           </Col>
@@ -43,7 +43,7 @@ const APIFeatures = () => {
                 <img src={Feature3} alt="" className='w-75' />
               </Col>
               <Col xs={12} className='text-center'>
-                <p className='fs-5'>Time is money, and with Neutronpay, you save both. Enjoy near instant transactions with lower fees, boosting your business efficiency and profitability.</p>
+                <p className='fs-5'>Save time and money with Neutronpay: instant transactions, lower fees.</p>
               </Col>
             </Col>
           </Col>
@@ -53,7 +53,7 @@ const APIFeatures = () => {
                 <img src={Feature4} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
-                <p className='fs-5'>Seamlessly integrate our API into your existing systems with minimal disruption and maximum efficiency.</p>
+                <p className='fs-5'>Integrate our API smoothly into your system with minimal disruption.</p>
               </Col>
             </Col>
           </Col>
@@ -63,7 +63,7 @@ const APIFeatures = () => {
                 <img src={Feature5} alt="" className='w-100' />
               </Col>
               <Col xs={12} className='text-center'>
-                <p className='fs-5'>Conduct transactions in multiple currencies, making your business truly global and eliminating currency conversion hassles.</p>
+                <p className='fs-5'>Handle multiple currencies effortlessly, eliminating conversion hassles.</p>
               </Col>
             </Col>
           </Col>

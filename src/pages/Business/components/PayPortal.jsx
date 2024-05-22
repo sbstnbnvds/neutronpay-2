@@ -20,7 +20,7 @@ const PayPortal = () => {
               <li className='mb-4 d-flex'>
                 <img src={listTick} alt="" className='pe-4' />
                 <p>
-                  Leverage our Neutronpay portal or take advantage of our plugins.
+                  Leverage our Neutronpay portal.
                 </p>
               </li>
               <li className='mb-4 d-flex'>

@@ -50,6 +50,35 @@
   }
 }
 
+.carousel-item {
+  height: 1300px;
+}
+
+
+@media (min-width: 992px) {
+
+  .carousel-item {
+    height: 950px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .carousel-item {
+    height: 885px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .carousel-item {
+    height: 825px;
+  }
+
+}
+
 /* Available Now */
 
 section.app-available-now .flag-app {

@@ -27,7 +27,7 @@ const Benefits = () => {
                 </Row>
                 <Row className=''>
                   <h3 className='steel-pink-text text-capitalize mb-4 steel-pink-to-grape-background gradient-text w-auto'>send</h3>
-                  <p>Quickly send money internationally. Use Bitcoin or your local currency to make secure & fast transactions to anyone, anywhere.</p>
+                  <p>Secure & fast transactions to anyone, anywhere.</p>
                 </Row>
               </Col>
             </Row>
@@ -44,7 +44,7 @@ const Benefits = () => {
                   </Col>
                 </Row>
                 <Row className=''>
-                  <p>Your business receives Bitcoin but it is instantly converted locally and ready to be withdrawn to a bank or mobile account</p>
+                  <p>Embrace Bitcoin payments and seamlessly withdraw funds using your local currency.</p>
                 </Row>
               </Col>
             </Row>
@@ -59,7 +59,7 @@ const Benefits = () => {
                 </Row>
                 <Row>
                   <h3 className='steel-pink-text text-capitalize mb-4 steel-pink-to-grape-background gradient-text w-auto'>low cost</h3>
-                  <p>Enjoy lower costs compared to traditional global payment methods thanks to our use of Bitcoin's instant and final settlement.</p>
+                  <p>Thanks to our use of Bitcoin's instant and final settlement.</p>
                 </Row>
               </Col>
             </Row>
