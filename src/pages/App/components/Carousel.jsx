@@ -54,7 +54,7 @@ const thirdSlideContent = [
 
 const AppCarousel = () => {
   return (
-    <section className='mb-5'>
+    <section className='mb-5 user-select-none'>
       <Row className='mx-0 justify-content-center'>
         <h2 className='text-capitalize w-auto display-3 fw-semibold grape-text mb-5 grape-to-steel-pink-background gradient-text px-0 text-center'>Neutronpay Features</h2>
       </Row>
