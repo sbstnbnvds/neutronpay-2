@@ -36,10 +36,10 @@ const Footer = () => {
         <Row className='mx-0 mb-4 px-0 pt-3'>
           <Col xs={12} md={6} className='mb-3'>
             <Col as={Logo} fill='white'></Col>
-            <Row className='mx-0 mt-3 mb-2'>
-              <p className='fs-6 mb-2'>Offices</p>
-              <p className='fs-6 mb-2'>Canada: 170-442 Richards St, Vancouver BC, V6b 2za</p>
-              <p className='fs-6 mb-2'>Vietnam: 62 Tran Quang Khai Street, Tan Dinh Ward, District 1, HCMC</p>
+            <Row className='mx-0 mt-3 mb-2 fs-6 '>
+              <p className='mb-2'>Offices</p>
+              <p className='mb-2'>Canada: 170-442 Richards St, Vancouver BC, V6b 2za</p>
+              <p className='mb-2'>Vietnam: 34 Le Duan St., Ben Nghe Ward, District 1, HCM City</p>
             </Row>
             {/* Login Button
 
@@ -65,7 +65,7 @@ const Footer = () => {
               <Col xs={12} md={8} xl={9} className=''>
                 <div className='border border-white border-2 rounded-3 py-2 px-3 d-flex flex-column'>
 
-                  <a className='fs-5 d-block pb-2 text-decoration-none text-light me-auto transition-1' href='https://support.neutronpay.com/' target='__blank'>FAQs</a>
+                  <a className='fs-5 d-block pb-2 text-decoration-none text-light me-auto transition-1' href='https://faq.neutronpay.com/' target='__blank'>FAQs</a>
                   <p className='fs-6'>Ask us anything about our brand and product, and get factual responses.</p>
                 </div>
                 <Row className='mx-0 mt-0 gy-4'>

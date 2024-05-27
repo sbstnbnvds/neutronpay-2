@@ -17,8 +17,8 @@ const EconomicalFees = () => {
           <Col
            md={6}
            className='d-flex flex-column align-items-center px-0 px-md-4'>
-            <h2 className='grape-text text-capitalize fw-semibold display-5 align-self-start'>economical fees</h2>
-            <p className='fw-normal text-light mb-5'>The Lightning Network operates with minimal fees, making it the smart choice for both businesses and everyday personal expenses.</p>
+            <h2 className='grape-text steel-pink-to-grape-background gradient-text text-capitalize fw-semibold display-5 align-self-start'>economical fees</h2>
+            <p className='fw-normal text-light mb-5 fs-5'>The Lightning Network operates with minimal fees, making it the smart choice for both businesses and everyday personal expenses.</p>
 
             <img
               src={graph}

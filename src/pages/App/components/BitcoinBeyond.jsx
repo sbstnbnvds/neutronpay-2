@@ -14,9 +14,9 @@ const BitcoinBeyond = () => {
 
         <h2 className='steel-pink-text text-capitalize text-center py-0 my-1 display-3 fw-semibold pb-4 steel-pink-to-grape-background gradient-text'>Bitcoin beyond assets <br className='d-none d-md-inline' /> a world of value</h2>
         <Row className='justify-content-center mx-0 px-2 py-3'>
-          <p className='fs-5'>BTC is like digital gold. It's not just money; it's the best kind of money. Real, fair prices, and the best choice for keeping your money safe.</p>
-          <Row className='px-0 mx-0 align-items-center flex-row-reverse justify-content-center'>
-            <Col xxl={9} lg={9} md={8} xs={12} className=''>
+          <p className='fs-5 text-center w-auto'>BTC is like digital gold. It's not just money; it's the best kind of money.<br className='d-none d-md-inline'/> Real, fair prices, and the best choice for keeping your money safe.</p>
+          <Row className='px-0 mx-0 align-items-center flex-row-reverse justify-content-center justify-content-xl-end'>
+            <Col lg={9} md={8} xs={12} className=''>
               <ul className='fs-5 ps-0'>
                 <li className='mb-3 d-flex'>
                   <img src={listTick} alt="" className='pe-4' />

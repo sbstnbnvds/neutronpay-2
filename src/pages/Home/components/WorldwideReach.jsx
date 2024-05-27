@@ -18,7 +18,7 @@ const WorldwideReach = () => {
         <Row className='w-100 mx-0 py-5 justify-content-evenly align-items-center flex-row-reverse gy-3'>
           <Col md={4}>
             <h2 className='grape-text text-capitalize fw-semibold display-5 grape-to-steel-pink-background gradient-text'>worldwide reach</h2>
-            <p className='fw-normal'>Connect globally with low fees and instant transactions. Perfect for any business, anywhere.</p>
+            <p className='fw-normal fs-5'>Connect globally with low fees and instant transactions. Perfect for any business, anywhere.</p>
           </Col>
           <Col md={8} className='position-relative px-1 d-flex flex-column align-items-center align-items-sm-start'>
             <img src={backgroundImage} className='rounded-4 w-75' alt="" />

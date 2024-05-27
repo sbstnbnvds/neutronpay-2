@@ -17,7 +17,7 @@ const Banner = () => {
             <h1 className='display-1 text-uppercase fw-800'>tap, pay, go</h1>
 
             <p className='steel-pink-text display-6 text-capitalize fw-medium steel-pink-to-grape-background gradient-text'>experience easy global payments, right from your pocket</p>
-            <p className='fs-5'>Neutronpay, powered by the Lightning Network, is a revolution in your pocket. It makes money management simple. Enjoy fast, secure payments for everyone—from businesses to freelancers and everyday users.</p>
+            <p className='fs-5'>Powered by the Lightning Network, we are a revolution in your pocket. Enjoy fast, secure payments for everyone.</p>
             <Row className='m-0 justify-content-around d-none d-lg-flex'>
               <Col lg={12} xl={9} md={10} sm={12} xs={9}>
                 <Row className='mx-0 align-items-center ps-sm-5 gy-4'>

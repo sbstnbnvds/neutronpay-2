@@ -17,7 +17,7 @@ const Banner = () => {
 
             <h1 className='text-capitalize display-2 fw-800'>Payments at <br className='d-none' /> the speed of light
             </h1>
-            <p className='fs-2 steel-pink-text'>Unlocking the power of Lightning Network</p>
+            <p className='fs-2 steel-pink-text'>Unlocking the power of the Lightning Network</p>
           </Col>
           <Col xxl={6} xl={5} lg={4} md={9} sm={12}
             className='position-relative align-items-center overflow-visible home-banner-img-container z-1'>
